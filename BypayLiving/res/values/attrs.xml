@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 进度view的属性，表示处于哪一步-->
+    <declare-styleable name="zt_open_progress_view_attrs">
+        <attr name="which_press" format="integer"/>
+        <attr name="which_type" format="integer"/>
+    </declare-styleable>
+    <!-- 标题的封装属性，中间文字的显示-->
+    <declare-styleable name="zt_open_headview_attrs">
+        <attr name="midtext" format="string"/>
+        <attr name="isShowBack" format="string"/>
+    </declare-styleable>
+
+</resources>

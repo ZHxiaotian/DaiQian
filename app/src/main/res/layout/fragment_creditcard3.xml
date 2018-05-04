@@ -1,0 +1,1917 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="自动还款交易类型" />
+
+                <EditText
+                    android:id="@+id/et_ddtrxtype"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="自动还款转出帐户类型1" />
+
+                <EditText
+                    android:id="@+id/et_outacctype1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="自动还款转出帐户类型2" />
+
+                <EditText
+                    android:id="@+id/et_outacctype2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="转出卡号/帐号1" />
+
+                <EditText
+                    android:id="@+id/et_outcardno1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="转出卡号/帐号2" />
+
+                <EditText
+                    android:id="@+id/et_outcardno2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="还款金额类型1" />
+
+                <EditText
+                    android:id="@+id/et_ddamttype1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="还款金额类型2" />
+
+                <EditText
+                    android:id="@+id/et_ddamttype2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="提前还款天数" />
+
+                <EditText
+                    android:id="@+id/et_paydays"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="部分还款1" />
+
+                <EditText
+                    android:id="@+id/et_partpayf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="部分还款2" />
+
+                <EditText
+                    android:id="@+id/et_partpayf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="主卡开通余额变动提醒" />
+
+                <EditText
+                    android:id="@+id/et_machgf"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="主卡发送移动电话" />
+
+                <EditText
+                    android:id="@+id/et_mamobile"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="主卡人民币定制金额" />
+
+                <EditText
+                    android:id="@+id/et_marmbamt"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="主卡外币定制金额" />
+
+                <EditText
+                    android:id="@+id/et_maforamt"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一开通余额变动提醒" />
+
+                <EditText
+                    android:id="@+id/et_dechgf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一发送移动电话" />
+
+                <EditText
+                    android:id="@+id/et_demobile1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一人民币定制金额" />
+
+                <EditText
+                    android:id="@+id/et_dermbamt1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一外币定制金额" />
+
+                <EditText
+                    android:id="@+id/et_deforamt1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一短信定制期限" />
+
+                <EditText
+                    android:id="@+id/et_decallf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一短信自动展期" />
+
+                <EditText
+                    android:id="@+id/et_decallexf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二开通余额变动提醒" />
+
+                <EditText
+                    android:id="@+id/et_dechgf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二发送移动电话" />
+
+                <EditText
+                    android:id="@+id/et_demobile2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二人民币定制金额" />
+
+                <EditText
+                    android:id="@+id/et_dermbamt2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二外币定制金额" />
+
+                <EditText
+                    android:id="@+id/et_deforamt2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二短信定制期限" />
+
+                <EditText
+                    android:id="@+id/et_decallf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二短信自动展期" />
+
+                <EditText
+                    android:id="@+id/et_decallexf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="开通email对账单" />
+
+                <EditText
+                    android:id="@+id/et_emaladdrf"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="对帐单EMAIL" />
+
+                <EditText
+                    android:id="@+id/et_stmtemail"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="监护人证件类型" />
+
+                <EditText
+                    android:id="@+id/et_wardidtype"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="监护人证件号码" />
+
+                <EditText
+                    android:id="@+id/et_wardidcode"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="监护人姓名" />
+
+                <EditText
+                    android:id="@+id/et_wardchsname"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一监护人证件类型" />
+
+                <EditText
+                    android:id="@+id/et_dewardidty1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一监护人证件号码" />
+
+                <EditText
+                    android:id="@+id/et_dewardid1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一监护人姓名" />
+
+                <EditText
+                    android:id="@+id/et_dewardname1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二监护人证件类型" />
+
+                <EditText
+                    android:id="@+id/et_dewardidty2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二监护人证件号码" />
+
+                <EditText
+                    android:id="@+id/et_dewardid2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二监护人姓名" />
+
+                <EditText
+                    android:id="@+id/et_dewardname2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="转出方钞汇标志1" />
+
+                <EditText
+                    android:id="@+id/et_outcashexf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="转出方钞汇标志2" />
+
+                <EditText
+                    android:id="@+id/et_outcashexf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="自动还款余额标准" />
+
+                <EditText
+                    android:id="@+id/et_lowtramt"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="还款后帐户余额" />
+
+                <EditText
+                    android:id="@+id/et_tranamt"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="图片编码" />
+
+                <EditText
+                    android:id="@+id/et_picno"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡1图片编码" />
+
+                <EditText
+                    android:id="@+id/et_picno1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡2图片编码" />
+
+                <EditText
+                    android:id="@+id/et_picno2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="发附属卡标志" />
+
+                <EditText
+                    android:id="@+id/et_scdmdu"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡1发附属卡标志" />
+
+                <EditText
+                    android:id="@+id/et_scdmdu1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡2发附属卡标志" />
+
+                <EditText
+                    android:id="@+id/et_scdmdu2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="主卡附属卡个性化编码" />
+
+                <EditText
+                    android:id="@+id/et_sicnno"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡1附属卡个性化编码" />
+
+                <EditText
+                    android:id="@+id/et_sicnno1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡2附属卡个性化编码" />
+
+                <EditText
+                    android:id="@+id/et_sicnno2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="主卡附属卡图片编码" />
+
+                <EditText
+                    android:id="@+id/et_spicno"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡1附属卡图片编码" />
+
+                <EditText
+                    android:id="@+id/et_spicno1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡2附属卡图片编码" />
+
+                <EditText
+                    android:id="@+id/et_spicno2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="开通短信对账单" />
+
+                <EditText
+                    android:id="@+id/et_smsaddrf"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="发送短信帐单手机号码" />
+
+                <EditText
+                    android:id="@+id/et_smsphone"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="问题编号" />
+
+                <EditText
+                    android:id="@+id/et_qesno"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="问题答案" />
+
+                <EditText
+                    android:id="@+id/et_answer"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="产品标志" />
+
+                <EditText
+                    android:id="@+id/et_crdrflag"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一产品标志" />
+
+                <EditText
+                    android:id="@+id/et_crdrflag1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二产品标志" />
+
+                <EditText
+                    android:id="@+id/et_crdrflag2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="附属卡产品标志" />
+
+                <EditText
+                    android:id="@+id/et_scrdrflag"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一附属卡产品标志" />
+
+                <EditText
+                    android:id="@+id/et_scrdrflag1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二附属卡产品标志" />
+
+                <EditText
+                    android:id="@+id/et_scrdrflag2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="借记贷记联动开关" />
+
+                <EditText
+                    android:id="@+id/et_crdropf"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一借记贷记联动开关" />
+
+                <EditText
+                    android:id="@+id/et_crdropf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二借记贷记联动开关" />
+
+                <EditText
+                    android:id="@+id/et_crdropf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="附属卡借记贷记联动开关" />
+
+                <EditText
+                    android:id="@+id/et_scrdropf"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一附属卡借记贷记联动开关" />
+
+                <EditText
+                    android:id="@+id/et_scrdropf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二附属卡借记贷记联动开关" />
+
+                <EditText
+                    android:id="@+id/et_scrdropf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="批量资金归集开关" />
+
+                <EditText
+                    android:id="@+id/et_fundopf"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一批量资金归集开关" />
+
+                <EditText
+                    android:id="@+id/et_fundopf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二批量资金归集开关" />
+
+                <EditText
+                    android:id="@+id/et_fundopf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="附属卡批量资金归集开关" />
+
+                <EditText
+                    android:id="@+id/et_sfundopf"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一附属卡批量资金归集开关" />
+
+                <EditText
+                    android:id="@+id/et_sfundopf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二附属卡批量资金归集开关" />
+
+                <EditText
+                    android:id="@+id/et_sfundopf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="借记贷记联动开关(外币)" />
+
+                <EditText
+                    android:id="@+id/et_fcrdropf"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一借记贷记联动开关(外币)" />
+
+                <EditText
+                    android:id="@+id/et_fcrdropf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二借记贷记联动开关(外币)" />
+
+                <EditText
+                    android:id="@+id/et_fcrdropf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="附属卡借记贷记联动开关(外币)" />
+
+                <EditText
+                    android:id="@+id/et_sfcrdropf"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一附属卡借记贷记联动开关(外币)" />
+
+                <EditText
+                    android:id="@+id/et_sfcrfropf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二附属卡借记贷记联动开关(外币)" />
+
+                <EditText
+                    android:id="@+id/et_sfcrdropf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="批量资金归集开关(外币)" />
+
+                <EditText
+                    android:id="@+id/et_ffundopf"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一批量资金归集开关(外币)" />
+
+                <EditText
+                    android:id="@+id/et_ffundopf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二批量资金归集开关(外币)" />
+
+                <EditText
+                    android:id="@+id/et_ffundopf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="附属卡批量资金归集开关(外币)" />
+
+                <EditText
+                    android:id="@+id/et_sffundopf"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡一附属卡批量资金归集开关(外币)" />
+
+                <EditText
+                    android:id="@+id/et_sffundopf1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡二附属卡批量资金归集开关(外币)" />
+
+                <EditText
+                    android:id="@+id/et_sffundopf2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="城市圈编号" />
+
+                <EditText
+                    android:id="@+id/et_cityno"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="联网核查结果" />
+
+                <EditText
+                    android:id="@+id/et_chkflg"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡1联网核查结果" />
+
+                <EditText
+                    android:id="@+id/et_dechkflg1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡2联网核查结果" />
+
+                <EditText
+                    android:id="@+id/et_dechkflg2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="核查结果说明" />
+
+                <EditText
+                    android:id="@+id/et_chkdesc"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡1核查结果说明" />
+
+                <EditText
+                    android:id="@+id/et_dechkdesc1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡2核查结果说明" />
+
+                <EditText
+                    android:id="@+id/et_dechkdesc2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="亲见客户签名" />
+
+                <EditText
+                    android:id="@+id/et_signflg"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡1亲见客户签名" />
+
+                <EditText
+                    android:id="@+id/et_designflg1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡2亲见客户签名" />
+
+                <EditText
+                    android:id="@+id/et_designflg2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="ATM转帐标志" />
+
+                <EditText
+                    android:id="@+id/et_atmtxflg"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡1ATM转帐标志" />
+
+                <EditText
+                    android:id="@+id/et_deatmtxflg1"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="副卡2ATM转帐标志" />
+
+                <EditText
+                    android:id="@+id/et_deatmtxflg2"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

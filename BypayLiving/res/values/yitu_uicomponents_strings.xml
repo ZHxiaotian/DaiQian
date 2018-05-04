@@ -1,0 +1,4 @@
+<resources>
+    <string name="yitu_string_second">秒</string>
+    <string name="yitu_string_count_down">倒计时</string>
+</resources>

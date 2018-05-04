@@ -1,0 +1,49 @@
+[
+    {
+        "outputFile": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 182
+                },
+                "from": {
+                    "file": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\values-v14\\styles.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 220,
+                        "endLine": 9,
+                        "endColumn": 12,
+                        "endOffset": 347
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 187,
+                    "endLine": 7,
+                    "endColumn": 12,
+                    "endOffset": 242
+                },
+                "from": {
+                    "file": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\values-v14\\yitu_camera_styles.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 687,
+                        "endLine": 19,
+                        "endColumn": 12,
+                        "endOffset": 742
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">贷前管理系统</string>
+    <string name="content_title1">个人档案</string>
+    <string name="content_title2">调研报告</string>
+    <string name="title_activity_index">IndexActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_rlsb">RLSBActivity</string>
+    <string name="title_activity_bankmsg">BankmsgActivity</string>
+    <string name="title_activity_research_report1">ResearchReport1Activity</string>
+    <string name="title_activity_zheng_xinresearch">ZhengXinresearchActivity</string>
+    <string name="title_activity_open_bredit_card">OpenBreditCardActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

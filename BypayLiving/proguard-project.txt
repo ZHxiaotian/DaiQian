@@ -1,0 +1,97 @@
+-optimizationpasses 7
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+
+# -libraryjars libs/armeabi-v7a/libBankCardScan.so
+# -libraryjars libs/armeabi-v7a/libfacial_action.so
+## -libraryjars libs/ccr_android_sdk_1.0.jar
+# -libraryjars libs/android-support-v4.jar
+#
+# -libraryjars libs/camera.jar
+# -libraryjars libs/camera_adapter.jar
+# -libraryjars libs/commons-httpclient-3.0.1.jar
+# -libraryjars libs/databaseimagesdk.jar
+# -libraryjars libs/uicomponents.jar
+# -libraryjars libs/utilities.jar
+# -libraryjars libs/yitufaceverificationsdk.jar
+# -libraryjars libs/yitulivenessdetectionsdk.jar
+# -libraryjars libs/commons-httpclient-3.0.1.jar
+# -libraryjars libs/bypay_living.jar
+
+
+-keep public class * extends android.app.Activity
+#-keep public class * extends android.app.Application
+#-keep public class * extends android.app.Service
+#-keep public class * extends android.content.BroadcastReceiver
+#-keep public class * extends android.content.ContentProvider
+#-keep public class * extends android.app.backup.BackupAgentHelper
+#-keep public class * extends android.preference.Preference
+#-keep public class * extends android.support.v4.**
+
+-dontwarn android.support.v4.**
+-dontwarn org.apache.commons.net.**
+-dontwarn com.tencent.**
+-dontwarn java.beans.**
+-dontwarn org.apache.**
+-dontwarn com.am.fras.**
+-ignorewarnings
+#和合银行卡混淆防护
+#-keep class com.am.fras.** { *;}
+#-keep class com.intsig.** { *;}
+#把银行卡识别的
+#-keep class com.zhengtong.activity.CCR_SDK_Camera{*;}
+#-keep class com.zhengtong.activity.CCR_SDK_Activity{*;}
+#-keepclasseswithmembernames class * {
+#    native <methods>;
+#}
+#防止自定义view被混淆
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+#-keepclassmembers enum * {
+#    public static **[] values();
+#    public static ** valueOf(java.lang.String);
+#}
+
+#-keep class * implements android.os.Parcelable {
+#  public static final android.os.Parcelable$Creator *;
+#}
+
+#-keepclasseswithmembers class * {
+#    public <init>(android.content.Context);
+#}
+
+-keepattributes Exceptions,InnerClasses,Signature
+#-keepattributes *Annotation*
+#-keepattributes SourceFile,LineNumberTable
+#-dontwarn javax.**
+#-dontwarn junit.**
+#-keep public class javax.**
+#-keep public class junit.**
+#-keep public class android.webkit.**
+
+
+-keep class com.exocr.**{*;}
+-keep class exocr.bankcard.**{*;}
+
+#-keep public class com.zhengtong.activity.YTHTActivity{*;}
+-keep public class com.yitutech.**{*;}
+-keep public class exocr.bankcard.**{*;}
+-keep public class com.zhengtong.activity.R{
+    public static final int *;
+}
+-keep class **.R$* {
+*;
+}
+
+-dontwarn assets.**
+-keep class assets.** {
+  *;
+}
+#-keep class com.zhengtong.view.HeadView{*;}
+#-keep class  com.am.fras.FaceEngine{*;}

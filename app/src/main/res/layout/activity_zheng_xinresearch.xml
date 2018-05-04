@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include layout="@layout/title_style" />
+
+    <RadioGroup
+        android:id="@+id/rg_act_zhgxinresh"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_act_zhexin_resprogrs"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="查询进度" />
+
+        <RadioButton
+            android:id="@+id/rb_act_zhexin_newaddresh"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="新增查询" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/rl_act_zhgxinresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+</LinearLayout>

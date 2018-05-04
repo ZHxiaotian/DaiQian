@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="floatWindowDefault">提示动作前请正对摄像头</string>
+    <string name="openMouth">请反复张嘴</string>
+    <string name="headShake">左右摇头</string>
+    <string name="headLeft">请向左摇头并回位</string>
+    <string name="headRight">请向右摇头并回位</string>
+    <string name="headFront">请缓慢仰头并回位</string>
+    <string name="headNod">请向下点头并回位</string>
+    <string name="headYaw">左右歪头</string>
+    <string name="headUpDown">上下点头</string>
+    <string name="blink">请眨眼</string>
+    <string name="wait">很好,下一步</string>
+    <string name="closeMouth">闭嘴</string>
+    <string name="stayMouth">保持</string>
+    <string name="wrongPosture">请将头部摆正</string>
+    <string name="openAgain">再张一次</string>
+    <string name="shakeAgain">再摇一次</string>
+    <string name="nodAgain">再点一次</string>
+    <string name="yawAgain">再偏一次</string>
+    <string name="doAgain">再做一次</string>
+    <string name="blinkAgain">再眨一次</string>
+    <string name="description"></string>
+    <string name="scan_text2">数据处理中...</string>
+    <string name="order_finish">完毕</string>
+    <string name="set_face">设置人脸密码</string>
+    <string name="scan_title">人脸识别</string>
+    <string name="order">指令</string>
+    <string name="antifakeTips">请根据提示张嘴</string>
+    <string name="nameNotNull">姓名不能为空</string>
+    <string name="lowQuality">请调整角度光线，稳定镜头</string>
+    <string name="zt_open_msg_weate">请稍候</string>
+
+</resources>

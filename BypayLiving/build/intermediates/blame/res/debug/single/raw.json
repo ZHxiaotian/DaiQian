@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_mouth_open_audio.mp3",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_mouth_open_audio.mp3"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_head_up_audio.mp3",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_head_up_audio.mp3"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_verification_fail_audio.mp3",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_verification_fail_audio.mp3"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_not_user_audio.mp3",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_not_user_audio.mp3"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_get_ready_audio.mp3",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_get_ready_audio.mp3"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_head_right_audio.mp3",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_head_right_audio.mp3"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_head_down_audio.mp3",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_head_down_audio.mp3"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_time_out_audio.mp3",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_time_out_audio.mp3"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\modelhash",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\modelhash"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_head_left_audio.mp3",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_head_left_audio.mp3"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_next_action_audio.mp3",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_next_action_audio.mp3"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\oliveapp_face_model2.zip",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\oliveapp_face_model2.zip"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\beep.ogg",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\beep.ogg"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_face_model2.zip",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_face_model2.zip"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_eye_close_audio.mp3",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_eye_close_audio.mp3"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\yitu_verification_pass_audio.mp3",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\yitu_verification_pass_audio.mp3"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\raw\\codehash",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\raw\\codehash"
+    }
+]

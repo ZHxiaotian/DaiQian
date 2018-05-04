@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="yitu_face_hello_blank_fragment">Hello blank fragment</string>
+    <string name="yitu_face_step_user_hint">1. 静态验证: 验证是否为用户本人; \n\n2. 动态验证: 验证是否为真人，而非使用照片、视频等伪造其他人进行验证</string>
+    <string name="yitu_face_step_user_hint_title">人脸登录验证分为静态验证和动态验证</string>
+    <string name="yitu_face_button_i_know_text">我知道了</string>
+    <string name="yitu_face_do_not_disturbe_me">下次不再提示</string>
+    <string name="yitu_face_hint_focus_here">请正对手机屏幕</string>
+    <string name="yitu_face_hint_need_meld_light">请在温和的光线下进行扫描，避免检测脸部光线不均，及脸部遮挡</string>
+
+    <string name="yitu_face_hint_check_user_exists">检查用户是否存在</string>
+    <string name="yitu_face_hint_please_wait">请稍后&#8230;</string>
+    <string name="yitu_face_hint_initializing">正在初始化，请稍后&#8230;</string>
+    <string name="yitu_face_hint_fail_initializing">无法初始化，请检查网络链接</string>
+    <string name="yitu_face_hint_pair_verifying">正在比对&#8230;</string>
+    <string name="yitu_face_hint_verifying">请将人脸放置在屏幕中央椭圆形区域内&#8230;</string>
+    <string name="yitu_face_hint_face_too_small">请把手机靠近人脸</string>
+    <string name="yitu_face_hint_no_face_detected">没有检测到人脸</string>
+    <string name="yitu_face_hint_verification_timeout">比对超时，请重试</string>
+    <string name="yitu_face_hint_verification_pass">比对通过！</string>
+    <string name="yitu_face_hint_pair_verify_failed">您好像不是用户本人?</string>
+
+    <string name="yitu_face_hint_illum_too_strong">光线太强</string>
+    <string name="yitu_face_hint_illum_too_dark">光线太弱，人脸区域亮度不够</string>
+    <string name="yitu_face_hint_illum_uneven">人脸上亮度不均匀</string>
+
+    <string name="yitu_face_hint_not_implemented">此功能还未实现!</string>
+
+    <string name="yitu_face_hint_place_id_card">请将身份证对准辅助框\n避免身份证上出现阴影</string>
+    <string name="yitu_face_hint_database_image_upload_succ">身份证照片上传成功</string>
+    <string name="yitu_face_hint_database_image_upload_fail">身份证照片上传失败</string>
+
+    <string name="yitu_face_error_missing_gender">请填写性别</string>
+    <string name="yitu_face_error_empty_username">用户名不能为空</string>
+    <string name="yitu_face_error_too_long_username">用户名过长</string>
+    <string name="yitu_face_error_invalid_username">用户名只能包含英文大小写、数字、下划线，长度3-80字符</string>
+    <string name="yitu_face_error_two_password_unmatch">两次密码输入不一致</string>
+    <string name="yitu_face_error_password_too_short">密码必须大于6位字符</string>
+    <string name="yitu_face_error_missing_born_year">请选择出生年份</string>
+    <string name="yitu_face_error_missing_nation">请选择民族</string>
+
+    <string name="yitu_face_service_unhealthy">无法初始化，请检查网络链接</string>
+    <string name="yitu_face_service_healthy">服务器连接成功</string>
+    <string name="yitu_face_hint_user_not_exists">用户不存在</string>
+    <string name="yitu_face_hint_database_image_not_exists">登记照片不存在</string>
+
+    <string name="yitu_face_choose_user">请选择用户</string>
+
+    <string-array name="yitu_face_hint_expression_verification_fail">
+        <item>没有认出你哦，到光线好些的地方试试?</item>
+        <item>没有认出你哦，摘下眼镜试试?</item>
+    </string-array>
+
+    <string name="yitu_face_database_image_hint_front">请拍摄身份证正面，确保人像和文字清晰</string>
+    <string name="yitu_face_database_image_hint_back">请拍摄身份证背面，确保文字清晰</string>
+
+
+</resources>

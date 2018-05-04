@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:layout_width="100dp"
+                android:text="分期金额" />
+
+            <EditText
+                android:id="@+id/fenqiJE_edittext"
+                style="@style/content_item_edittext"
+                android:digits="0123456789xX"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="分期付款期数" />
+
+            <com.zonesun.daiqian.view.MyRelativeLayout
+                android:id="@+id/rl_fqfkqs"
+                style="@style/content_item_layout" >
+
+                <TextView
+                    android:id="@+id/fqfkqs_edittext"
+                    style="@style/spinner_textview"
+                    android:layout_toLeftOf="@+id/fqfkqs_btn" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/fqfkqs_btn"
+                    style="@style/spinner_dropdown" />
+            </com.zonesun.daiqian.view.MyRelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:layout_width="100dp"
+                android:text="信用总额度" />
+
+            <TextView
+                android:id="@+id/xinyongkaZED_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!-- 申请人家庭收入还贷比 -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <!-- 成数	分期付款期数 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:layout_width="100dp"
+                android:text="手续费金额" />
+
+            <TextView
+                android:id="@+id/sxfje_textview"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:layout_width="100dp"
+                android:text="成数" />
+
+            <TextView
+                android:id="@+id/cs_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="申请人家庭收入还贷比" />
+
+            <TextView
+                android:id="@+id/sqrjtsrhdb_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 首月还款金额	月还款金额       分期付款手续费率 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <!-- 首月还款金额 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="首月还款金额:" />
+
+            <TextView
+                android:id="@+id/syhkje_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!-- 月还款金额 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="月还款金额 :" />
+
+            <TextView
+                android:id="@+id/yhkje_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- 分期付款手续费率 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="分期付款手续费率:" />
+
+            <EditText
+                android:id="@+id/fqfksxfl_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

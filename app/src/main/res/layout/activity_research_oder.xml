@@ -1,0 +1,311 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include layout="@layout/title_style" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:orientation="horizontal" >
+
+                    <!-- 申请人姓名 -->
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/content_item_title"
+                            android:layout_width="100dp"
+                            android:text="*申请人姓名" />
+
+                        <EditText
+                            android:id="@+id/xczf_sqrxm_edittext"
+                            style="@style/content_item_edittext"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <!-- 手机号码 -->
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/content_item_title"
+                            android:text="*手机号码" />
+
+                        <EditText
+                            android:id="@+id/xczf_sjhm_edittext"
+                            style="@style/content_item_edittext"
+                            android:inputType="number"
+                            android:maxLength="11" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 证件类型、证件号码 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:orientation="horizontal" >
+
+                    <!-- 证件类型 -->
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/content_item_title"
+                            android:layout_width="100dp"
+                            android:text="*证件类型" />
+
+                        <com.zonesun.daiqian.view.MyRelativeLayout
+                            android:id="@+id/rl_zjlx"
+                            style="@style/content_item_layout" >
+
+                            <TextView
+                                android:id="@+id/xczf_zjlx_spinner_text"
+                                style="@style/spinner_textview"
+                                android:layout_toLeftOf="@+id/xczf_zjlx_btn" >
+                            </TextView>
+
+                            <ImageButton
+                                android:id="@+id/xczf_zjlx_btn"
+                                style="@style/spinner_dropdown" />
+                        </com.zonesun.daiqian.view.MyRelativeLayout>
+                    </LinearLayout>
+                    <!-- 证件号码 -->
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/content_item_title"
+                            android:inputType="number"
+                            android:text="*证件号码" />
+
+                        <EditText
+                            android:id="@+id/xczf_zjhm_edittext"
+                            style="@style/content_item_edittext"
+                            android:digits="0123456789xX"
+                            android:inputType="text"
+                            android:maxLength="18" />
+                    </LinearLayout>
+                    <!-- 还款途径 -->
+
+                </LinearLayout>
+
+                <!-- 裸车价格和还款途径 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:orientation="horizontal" >
+
+                    <!-- 裸车价格 -->
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/content_item_title"
+                            android:layout_width="100dp"
+                            android:text="裸车价格:" />
+
+                        <EditText
+                            android:id="@+id/xczf_lcjg_edittext"
+                            style="@style/content_item_edittext"
+                            android:inputType="numberDecimal" />
+                    </LinearLayout>
+                    <!-- 购车品牌 -->
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/content_item_title"
+                            android:text="*购车品牌:" />
+
+                        <com.zonesun.daiqian.view.MyRelativeLayout
+                        android:id="@+id/rl_buyCarModel"
+                        style="@style/content_item_layout" >
+
+                        <TextView
+                            android:id="@+id/xczf_gcpp_edittext"
+                            style="@style/spinner_textview"
+                            android:layout_toLeftOf="@+id/sqrxl_btn" >
+                        </TextView>
+
+                        <ImageButton
+                            android:id="@+id/sqrxl_btn"
+                            style="@style/spinner_dropdown" />
+                    </com.zonesun.daiqian.view.MyRelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/layout_zhenxin" />
+
+                <!-- 进口车标志     车型   排气量 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:orientation="horizontal" >
+
+                    <!-- 进口车标志 -->
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/content_item_title"
+                            android:layout_width="100dp"
+                            android:text="进口车标志:" />
+
+                        <com.zonesun.daiqian.view.MyRelativeLayout
+                            android:id="@+id/rl_jkcbz"
+                            style="@style/content_item_layout" >
+
+                            <TextView
+                                android:id="@+id/xczf_jkcbz_spinner_text"
+                                style="@style/spinner_textview"
+                                android:layout_toLeftOf="@+id/xczf_jkcbz_btn" >
+                            </TextView>
+
+                            <ImageButton
+                                android:id="@+id/xczf_jkcbz_btn"
+                                style="@style/spinner_dropdown" />
+                        </com.zonesun.daiqian.view.MyRelativeLayout>
+                    </LinearLayout>
+
+                    <!-- 车型 -->
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/content_item_title"
+                            
+                            android:text="车型:" />
+
+                        <EditText
+                            
+                            android:id="@+id/xczf_cx_spinner_text"
+                            style="@style/content_item_edittext" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <!-- 排气量 -->
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/content_item_title"
+                            android:layout_width="100dp"
+                            android:text="排气量:" />
+
+                        <com.zonesun.daiqian.view.MyRelativeLayout
+                            android:id="@+id/rl_pql"
+                            style="@style/content_item_layout" >
+
+                            <TextView
+                                android:id="@+id/xczf_pql_spinner_text"
+                                style="@style/spinner_textview"
+                                android:layout_toLeftOf="@+id/pql_btn" >
+                            </TextView>
+
+                            <ImageButton
+                                android:id="@+id/xczf_pql_btn"
+                                style="@style/spinner_dropdown" />
+                        </com.zonesun.daiqian.view.MyRelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/xczf_btn_tijiao"
+                    android:layout_width="200dip"
+                    android:layout_height="60dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="30dip"
+                    android:background="@drawable/button_normal"
+                    android:text="提交"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="youtuattrs">
+        <attr name="cameraPosition">
+            <flag name="front" value="0" />
+            <flag name="back" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CirclePercentView">
+        <attr name="radius" format="dimension" />
+        <attr name="stripeWidth" format="dimension" /> <!-- 色带宽度 -->
+        <attr name="percent" format="integer" /> <!-- 百分比 最大值为100 -->
+        <attr name="smallColor" format="color" /> <!-- 色带宽度 -->
+        <!-- 外圈颜色 -->
+        <attr name="bigColor" format="color" />
+
+        <!-- 中间字体颜色 -->
+        <attr name="centerTextSize" format="dimension" />
+        <!-- 色带宽度 -->
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <attr name="src" format="reference"></attr>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+        <attr name="src" />
+    </declare-styleable>
+
+</resources>

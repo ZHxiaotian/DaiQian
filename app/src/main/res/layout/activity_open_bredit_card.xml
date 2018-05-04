@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+     <include layout="@layout/title_style" />
+<LinearLayout 
+    android:orientation="vertical"
+    android:id="@+id/ll_obc"
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:gravity="center"
+    android:layout_weight="1"
+    >
+     <TextView
+         android:gravity="center"
+         android:text="当前设别受到限制无法开启开卡申请功能"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+</LinearLayout>
+    
+     
+    
+</LinearLayout>

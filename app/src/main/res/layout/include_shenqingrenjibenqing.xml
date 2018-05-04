@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/sqrjbqk_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/content_title"
+                android:text="申请人基本情况" />
+
+            <TextView
+                android:id="@+id/tv_sfsm"
+                android:layout_width="150dip"
+                android:layout_height="45dip"
+                android:background="@color/titleBackgroudblue"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dip"
+                android:text="身份证扫描"
+
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_spzl"
+                android:layout_width="150dip"
+                android:layout_height="45dip"
+                android:background="@color/titleBackgroudblue"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dip"
+                android:text="视频资料"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+        <!-- 姓名、性别、出生年月 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <!-- 中文姓名 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*中文姓名:" />
+
+                <EditText
+                    android:id="@+id/zwxm_edittext"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <!-- 手机号码 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*手机号码:" />
+
+                <EditText
+                    android:id="@+id/sjhm_edittext"
+                    style="@style/content_item_edittext"
+                    android:inputType="number"
+                    android:maxLength="11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+        <!-- 证件类型、证件号码 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal">
+
+            <!-- 证件类型 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*证件类型:" />
+
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_CredentialsModel"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/zjlx_spinner_text"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/zjlx_btn"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/zjlx_btn"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- 证件号码 -->
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/content_item_title"
+                        android:text="*证件号码:" />
+
+                    <EditText
+                        android:id="@+id/zjhm_edittext"
+                        style="@style/content_item_edittext"
+                        android:digits="0123456789xX"
+                        android:maxLength="18" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_rlsb"
+                        style="@style/content_item_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shape_login_submit"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="人脸识别"
+                        android:textColor="#ffffff"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_hqsfxx"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/titleBackgroudblue"
+                android:text="获取身份信息" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal">
+
+            <!-- 性别 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:paddingRight="40dp"
+                    android:text="性别:" />
+
+                <TextView
+                    android:id="@+id/xb_spinner_text"
+                    style="@style/content_item_edittext"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/shape_normal"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <!-- 出生年月 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*出生年月:" />
+
+                <TextView
+                    android:id="@+id/csny_edittext"
+                    style="@style/content_item_edittext"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/shape_normal"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- 婚姻状况 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal">
+
+            <!-- 婚姻状况 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*婚姻状况:" />
+
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_MaritalStatus"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/hyzk_spinner_text"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/hyzk_btn"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/hyzk_btn"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <!-- 担保人 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_gtczrordbr"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/content_item_title"
+                        android:text="共同偿债人或者担保人" />
+
+                    <RelativeLayout style="@style/content_item_layout">
+
+                        <TextView
+                            android:id="@+id/gtczrordbr_spinner_text"
+                            style="@style/spinner_textview"
+                            android:layout_toLeftOf="@+id/gtczrordbr_btn"></TextView>
+
+                        <ImageButton
+                            android:id="@+id/gtczrordbr_btn"
+                            style="@style/spinner_dropdown" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"></LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 户口所在地 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 省市县start -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="户口所在地:" />
+
+                <!-- 省 -->
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_provnce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_toLeftOf="@+id/hkszd_sheng_text">
+
+                        <EditText
+                            android:id="@+id/hkszd_sheng_spinner_text"
+                            style="@style/content_item_edittext_gcpp"
+                            android:layout_toLeftOf="@+id/hkszd_sheng_btn"></EditText>
+
+                        <ImageButton
+                            android:id="@+id/hkszd_sheng_btn"
+                            style="@style/spinner_dropdown" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/hkszd_sheng_text"
+                        style="@style/content_item_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="省" />
+                </RelativeLayout>
+                <!-- 市 -->
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_City"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_toLeftOf="@+id/hkszd_shi_text">
+
+                        <EditText
+                            android:id="@+id/hkszd_shi_spinner_text"
+                            style="@style/content_item_edittext_gcpp"
+                            android:layout_toLeftOf="@+id/hkszd_shi_btn"></EditText>
+
+                        <ImageButton
+                            android:id="@+id/hkszd_shi_btn"
+                            style="@style/spinner_dropdown" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/hkszd_shi_text"
+                        style="@style/content_item_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="市" />
+                </RelativeLayout>
+                <!-- 县 -->
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/hkszd_xian_spinner_text"
+                        style="@style/content_item_edittext"
+                        android:layout_toLeftOf="@+id/hkszd_xian_text" />
+
+                    <TextView
+                        android:id="@+id/hkszd_xian_text"
+                        style="@style/content_item_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="区/县" />
+                </RelativeLayout>
+            </LinearLayout> <!-- 省市县 end -->
+
+
+            <!-- 户口所在地详细地址 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="户口地详细:"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/hkszd_xx_edittext"
+                    style="@style/content_item_edittext"
+                    android:layout_width="600dip"
+                    android:hint="详细地址" />
+            </LinearLayout> <!-- 户口所在地详细地址 end -->
+
+        </LinearLayout>
+
+        <!-- 住宅状况 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal">
+
+            <!-- 住宅状况 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*住宅状况:" />
+
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_Residential"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/zzzk_spinner_text"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/zzzk_btn"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/zzzk_btn"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </LinearLayout> <!-- 住宅状况 end -->
+
+
+        <!-- 现居住地 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 省市县start -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="现居住地:" />
+
+                <!-- 省 -->
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_NowLive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_toLeftOf="@+id/xjzd_sheng_text">
+
+                        <EditText
+                            android:id="@+id/xjzd_sheng_spinner_text"
+                            style="@style/content_item_edittext_gcpp"
+                            android:layout_toLeftOf="@+id/xjzd_sheng_btn"></EditText>
+
+                        <ImageButton
+                            android:id="@+id/xjzd_sheng_btn"
+                            style="@style/spinner_dropdown" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/xjzd_sheng_text"
+                        style="@style/content_item_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="省" />
+                </RelativeLayout>
+                <!-- 市 -->
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_NowCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_toLeftOf="@+id/xjzd_shi_text">
+
+                        <EditText
+                            android:id="@+id/xjzd_shi_spinner_text"
+                            style="@style/content_item_edittext_gcpp"
+                            android:layout_toLeftOf="@+id/xjzd_shi_btn"></EditText>
+
+                        <ImageButton
+                            android:id="@+id/xjzd_shi_btn"
+                            style="@style/spinner_dropdown" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/xjzd_shi_text"
+                        style="@style/content_item_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="市" />
+                </RelativeLayout>
+                <!-- 县 -->
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/xjzd_xian_spinner_text"
+                        style="@style/content_item_edittext"
+                        android:layout_toLeftOf="@+id/xjzd_xian_text" />
+
+                    <TextView
+                        android:id="@+id/xjzd_xian_text"
+                        style="@style/content_item_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="区/县" />
+                </RelativeLayout>
+            </LinearLayout> <!-- 省市县 end -->
+
+
+            <!-- 户口所在地详细地址 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="现居住地:"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/xjzd_xx_edittext"
+                    style="@style/content_item_edittext"
+                    android:layout_width="600dip"
+                    android:hint="现居住地详细地址" />
+            </LinearLayout> <!-- 现居住地详细地址 end -->
+
+        </LinearLayout>
+
+        <!-- 所在单位、单位性质 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal">
+
+            <!-- 所在单位 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*所在单位:" />
+
+                <EditText
+                    android:id="@+id/szdw_edittext"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <!-- 单位性质 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*单位性质:" />
+
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_unitnature"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/dwxz_spinner_text"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/dwxz_btn"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/dwxz_btn"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- 单位电话、职务类别 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal">
+
+            <!-- 单位电话 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:inputType="number"
+                    android:text="单位电话:" />
+
+                <EditText
+                    android:id="@+id/dwdh_edittext"
+                    style="@style/content_item_edittext"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <!-- 职务类别 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="职务类别:" />
+
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_Postnature"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/zwlb_spinner_text"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/zwlb_btn"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/zwlb_btn"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+            </LinearLayout>
+            <!-- 月均收入 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*月均收入(元):" />
+
+                <EditText
+                    android:id="@+id/yjsr_edittext"
+                    style="@style/content_item_edittext"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 单位地址 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 省市县start -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="单位地址:" />
+
+                <!-- 省 -->
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_PostAddP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_toLeftOf="@+id/dwdz_sheng_text">
+
+                        <EditText
+                            android:id="@+id/dwdz_sheng_spinner_text"
+                            style="@style/content_item_edittext_gcpp"
+                            android:layout_toLeftOf="@+id/dwdz_sheng_btn"></EditText>
+
+                        <ImageButton
+                            android:id="@+id/dwdz_sheng_btn"
+                            style="@style/spinner_dropdown" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/dwdz_sheng_text"
+                        style="@style/content_item_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="省" />
+                </RelativeLayout>
+                <!-- 市 -->
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_PostAddC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_toLeftOf="@+id/dwdz_shi_text">
+
+                        <TextView
+                            android:id="@+id/dwdz_shi_spinner_text"
+                            style="@style/content_item_edittext_gcpp"
+                            android:layout_toLeftOf="@+id/dwdz_shi_btn"></TextView>
+
+                        <ImageButton
+                            android:id="@+id/dwdz_shi_btn"
+                            style="@style/spinner_dropdown" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/dwdz_shi_text"
+                        style="@style/content_item_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="市" />
+                </RelativeLayout>
+                <!-- 县 -->
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dwdz_xian_spinner_text"
+                        style="@style/content_item_edittext"
+                        android:layout_toLeftOf="@+id/dwdz_xian_text" />
+
+                    <TextView
+                        android:id="@+id/dwdz_xian_text"
+                        style="@style/content_item_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="区/县" />
+                </RelativeLayout>
+            </LinearLayout> <!-- 省市县 end -->
+
+
+            <!-- 单位详细地址 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="单位地址:"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/dwdz_xx_edittext"
+                    style="@style/content_item_edittext"
+                    android:layout_width="600dip"
+                    android:hint="单位详细地址" />
+            </LinearLayout> <!-- 单位地址详细地址 end -->
+
+        </LinearLayout>
+
+        <!-- 家庭已有贷款月还款额 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal">
+
+            <!-- 家庭已有贷款月还款额 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*家庭已有贷款月还款额:" />
+
+                <EditText
+                    android:id="@+id/jtyydkhke_edittext"
+                    style="@style/content_item_edittext"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sxfstatus"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*综合服务费:" />
+
+                <EditText
+
+                    android:id="@+id/sxfstatus_edittext"
+                    style="@style/content_item_edittext"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="银行卡号:" />
+
+                <EditText
+                    android:id="@+id/yhkh_edittext"
+                    style="@style/content_item_edittext"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_yhkxffx"
+                    style="@style/content_item_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_login_submit"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="银行卡消费分析"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

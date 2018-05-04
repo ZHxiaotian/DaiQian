@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ItemArray">
+         <item>银行卡</item>
+         <item>身份证</item>
+     </array>
+    <string-array name="pref_camera_countdown_labels">
+        <item>@string/yitu_camera_pref_camera_countdown_label_off</item>
+        <item>@string/yitu_camera_pref_camera_countdown_label_one</item>
+        <item>@string/yitu_camera_pref_camera_countdown_label_three</item>
+        <item>@string/yitu_camera_pref_camera_countdown_label_ten</item>
+        <item>@string/yitu_camera_pref_camera_countdown_label_fifteen</item>
+    </string-array>
+    <array name="yitu_camera_camera_flashmode_icons" translatable="false">
+    </array>
+    <array name="yitu_camera_camera_flashmode_largeicons" translatable="false">
+    </array>
+    <array name="yitu_camera_camera_id_entries" translatable="false">
+        <item>@string/yitu_camera_pref_camera_id_entry_back</item>
+        <item>@string/yitu_camera_pref_camera_id_entry_front</item>
+    </array>
+    <array name="yitu_camera_camera_id_icons" translatable="false">
+    </array>
+    <array name="yitu_camera_camera_id_labels" translatable="false">
+        <item>@string/yitu_camera_pref_camera_id_label_back</item>
+        <item>@string/yitu_camera_pref_camera_id_label_front</item>
+    </array>
+    <array name="yitu_camera_camera_id_largeicons" translatable="false">
+    </array>
+    <array name="yitu_camera_pref_camera_exposure_icons" translatable="false">
+    </array>
+    <string-array name="yitu_camera_pref_camera_flashmode_entries" translatable="false">
+        <item>@string/yitu_camera_pref_camera_flashmode_entry_off</item>
+        <item>@string/yitu_camera_pref_camera_flashmode_entry_auto</item>
+        <item>@string/yitu_camera_pref_camera_flashmode_entry_on</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_flashmode_entryvalues" translatable="false">
+        <item>off</item>
+        <item>auto</item>
+        <item>on</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_flashmode_labels" translatable="false">
+        <item>@string/yitu_camera_pref_camera_flashmode_label_off</item>
+        <item>@string/yitu_camera_pref_camera_flashmode_label_auto</item>
+        <item>@string/yitu_camera_pref_camera_flashmode_label_on</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_focusmode_default_array" translatable="false">
+        <item>continuous-picture</item>
+        <item>auto</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_focusmode_entries" translatable="false">
+        <item>@string/yitu_camera_pref_camera_focusmode_entry_auto</item>
+        <item>@string/yitu_camera_pref_camera_focusmode_entry_infinity</item>
+        <item>@string/yitu_camera_pref_camera_focusmode_entry_macro</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_focusmode_entryvalues" translatable="false">
+        <item>auto</item>
+        <item>infinity</item>
+        <item>macro</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_focusmode_labels" translatable="false">
+        <item>@string/yitu_camera_pref_camera_focusmode_label_auto</item>
+        <item>@string/yitu_camera_pref_camera_focusmode_label_infinity</item>
+        <item>@string/yitu_camera_pref_camera_focusmode_label_macro</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_hdr_entries" translatable="false">
+        <item>@string/yitu_camera_setting_off</item>
+        <item>@string/yitu_camera_setting_on</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_hdr_entryvalues" translatable="false">
+        <item>@string/yitu_camera_setting_off_value</item>
+        <item>@string/yitu_camera_setting_on_value</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_hdr_plus_entries" translatable="false">
+        <item>@string/yitu_camera_setting_off</item>
+        <item>@string/yitu_camera_setting_on</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_hdr_plus_entryvalues" translatable="false">
+        <item>@string/yitu_camera_setting_off_value</item>
+        <item>@string/yitu_camera_setting_on_value</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_picturesize_entries" translatable="false">
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_13mp</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_8mp</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_5mp</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_5mp</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_5mp</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_4mp</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_3mp</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_2mp</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_2mp_wide</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_2mp_wide</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_1_5mp</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_1_3mp</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_1mp</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_1mp</item>
+        <item>960 x 720</item>
+        <item>720 x 480</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_vga</item>
+        <item>@string/yitu_camera_pref_camera_picturesize_entry_qvga</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_picturesize_entryvalues" translatable="false">
+        <item>4128x3096</item>
+        <item>3264x2448</item>
+        <item>2592x1944</item>
+        <item>2592x1936</item>
+        <item>2560x1920</item>
+        <item>2688x1520</item>
+        <item>2048x1536</item>
+        <item>1600x1200</item>
+        <item>1920x1088</item>
+        <item>1920x1080</item>
+        <item>1440x1080</item>
+        <item>1280x960</item>
+        <item>1280x720</item>
+        <item>1024x768</item>
+        <item>960x720</item>
+        <item>720x480</item>
+        <item>640x480</item>
+        <item>320x240</item>
+    </string-array>
+    <array name="yitu_camera_pref_camera_recordlocation_entries" translatable="false">
+        <item>@string/yitu_camera_setting_off</item>
+        <item>@string/yitu_camera_setting_on</item>
+    </array>
+    <string-array name="yitu_camera_pref_camera_recordlocation_entryvalues" translatable="false">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_timer_sound_entries" translatable="false">
+        <item>@string/yitu_camera_setting_off</item>
+        <item>@string/yitu_camera_setting_on</item>
+    </string-array>
+    <string-array name="yitu_camera_pref_camera_timer_sound_entryvalues" translatable="false">
+        <item>@string/yitu_camera_setting_off_value</item>
+        <item>@string/yitu_camera_setting_on_value</item>
+    </string-array>
+    <string-array name="yitu_face_hint_expression_verification_fail">
+        <item>没有认出你哦，到光线好些的地方试试?</item>
+        <item>没有认出你哦，摘下眼镜试试?</item>
+    </string-array>
+    <color name="background_color">#efeff4</color>
+    <color name="black">#000000</color>
+    <color name="blue">#2077bd</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="green">#24B200</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="line_color">#ffa8abad</color>
+    <color name="orange">#FF6600</color>
+    <color name="orange_press">#B24700</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="red">#ffff0000</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_box">#ffafafaf</color>
+    <color name="viewfinder_frame">#ff80ff00</color>
+    <color name="viewfinder_laser">#ff00ff00</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yitu_camera_bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="yitu_camera_bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="yitu_camera_face_detect_fail">#80d05060</color>
+    <color name="yitu_camera_face_detect_start">#80ffffff</color>
+    <color name="yitu_camera_face_detect_success">#8050d060</color>
+    <color name="yitu_camera_gray">#FFAAAAAA</color>
+    <color name="yitu_camera_popup_background">#ff282828</color>
+    <color name="yitu_camera_popup_title_color">#ff33b5e5</color>
+    <color name="zt_open_button_press">#be3e3e</color>
+    <color name="zt_open_checkIDInfo_background_line_gray">#EBEBEB</color>
+    <color name="zt_open_gray_progress">#93979b</color>
+    <color name="zt_open_red_headview_background">#F05455</color>
+    <color name="zt_open_transparent">#00000000</color>
+    <declare-styleable name="AutoRatioImageView"><attr format="float" name="ratio"/><attr format="integer" name="prefer"/></declare-styleable>
+    <declare-styleable name="CameraFlavor"><attr format="string" name="sdktitle"/></declare-styleable>
+    <declare-styleable name="FixedAspectLayout"><attr format="float" name="aspectRatio"/><attr format="integer" name="fixMode">
+            <enum name="fixHeight" value="1"/>
+            <enum name="fixWidth" value="2"/>
+        </attr></declare-styleable>
+    <declare-styleable name="IconIndicator"><attr format="reference" name="icons"/><attr format="reference" name="modes"/></declare-styleable>
+    <declare-styleable name="Picture"><attr format="reference" name="singleIcon"/><attr name="icons"/><attr format="reference" name="largeIcons"/><attr format="reference" name="images"/></declare-styleable>
+    <declare-styleable name="ShowChoices"><attr format="string" name="key"/><attr format="string|reference" name="defaultValue"/><attr format="reference" name="entryValues"/><attr format="reference" name="entries"/><attr format="reference" name="labelList"/></declare-styleable>
+    <declare-styleable name="SlidingMenu"><attr name="mode">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr><attr format="reference" name="viewAbove"/><attr format="reference" name="viewBehind"/><attr format="dimension" name="behindOffset"/><attr format="dimension" name="behindWidth"/><attr format="float" name="behindScrollScale"/><attr name="touchModeAbove">
+            <enum name="margin" value="0"/>
+            <enum name="fullscreen" value="1"/>
+        </attr><attr name="touchModeBehind">
+            <enum name="margin" value="0"/>
+            <enum name="fullscreen" value="1"/>
+        </attr><attr format="reference" name="shadowDrawable"/><attr format="dimension" name="shadowWidth"/><attr format="boolean" name="fadeEnabled"/><attr format="float" name="fadeDegree"/><attr format="boolean" name="selectorEnabled"/><attr format="reference" name="selectorDrawable"/></declare-styleable>
+    <declare-styleable name="zt_open_headview_attrs"><attr format="string" name="midtext"/><attr format="string" name="isShowBack"/></declare-styleable>
+    <declare-styleable name="zt_open_progress_view_attrs"><attr format="integer" name="which_press"/><attr format="integer" name="which_type"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="yitu_camera_big_setting_popup_window_width">320dp</dimen>
+    <dimen name="yitu_camera_camera_controls_size">0dip</dimen>
+    <dimen name="yitu_camera_capture_border">8dip</dimen>
+    <dimen name="yitu_camera_capture_margin_right">16dip</dimen>
+    <dimen name="yitu_camera_capture_margin_top">16dip</dimen>
+    <dimen name="yitu_camera_capture_size">48dip</dimen>
+    <dimen name="yitu_camera_effect_setting_clear_text_min_height">45dp</dimen>
+    <dimen name="yitu_camera_effect_setting_clear_text_size">20dp</dimen>
+    <dimen name="yitu_camera_effect_setting_item_icon_width">40dp</dimen>
+    <dimen name="yitu_camera_effect_setting_item_text_size">12sp</dimen>
+    <dimen name="yitu_camera_effect_setting_type_text_left_padding">16dp</dimen>
+    <dimen name="yitu_camera_effect_setting_type_text_min_height">36dp</dimen>
+    <dimen name="yitu_camera_effect_setting_type_text_size">12sp</dimen>
+    <dimen name="yitu_camera_face_circle_stroke">2dip</dimen>
+    <dimen name="yitu_camera_focus_inner_offset">24dp</dimen>
+    <dimen name="yitu_camera_focus_inner_stroke">2dp</dimen>
+    <dimen name="yitu_camera_focus_outer_stroke">3dp</dimen>
+    <dimen name="yitu_camera_focus_radius_offset">8dp</dimen>
+    <dimen name="yitu_camera_indicator_bar_width">48dp</dimen>
+    <dimen name="yitu_camera_onscreen_exposure_indicator_text_size">15dp</dimen>
+    <dimen name="yitu_camera_onscreen_indicators_height">28dp</dimen>
+    <dimen name="yitu_camera_pie_progress_radius">25dp</dimen>
+    <dimen name="yitu_camera_pie_progress_width">3dp</dimen>
+    <dimen name="yitu_camera_pie_radius_increment">48dp</dimen>
+    <dimen name="yitu_camera_pie_radius_start">80dp</dimen>
+    <dimen name="yitu_camera_pie_touch_offset">32dp</dimen>
+    <dimen name="yitu_camera_pie_touch_slop">12dp</dimen>
+    <dimen name="yitu_camera_popup_title_frame_min_height">49dp</dimen>
+    <dimen name="yitu_camera_popup_title_text_size">22dp</dimen>
+    <dimen name="yitu_camera_setting_item_icon_width">28dp</dimen>
+    <dimen name="yitu_camera_setting_item_list_margin">14dp</dimen>
+    <dimen name="yitu_camera_setting_item_text_size">18sp</dimen>
+    <dimen name="yitu_camera_setting_item_text_width">95dp</dimen>
+    <dimen name="yitu_camera_setting_popup_right_margin">5dp</dimen>
+    <dimen name="yitu_camera_setting_popup_window_width">240dp</dimen>
+    <dimen name="yitu_camera_setting_row_height">50dp</dimen>
+    <dimen name="yitu_camera_shutter_offset">12dp</dimen>
+    <dimen name="yitu_camera_switcher_size">48dp</dimen>
+    <dimen name="yitu_camera_zoom_font_size">20sp</dimen>
+    <dimen name="yitu_camera_zoom_ring_min">48dp</dimen>
+    <dimen name="zt_open_linewidth">0.5dp</dimen>
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <item name="selected_view" type="id"/>
+    <item name="yitu_face_CameraViewId" type="id"/>
+    <item name="yitu_face_ScanbarViewId" type="id"/>
+    <plurals name="yitu_camera_pref_camera_timer_entry">
+        <item msgid="8919878087230098328" quantity="one">"1秒"</item>
+        <item msgid="5782794798884172289" quantity="other">"%d秒"</item>
+    </plurals>
+    <string name="action_settings">Settings</string>
+    <string name="action_settings_dbimage">Settings</string>
+    <string name="antifakeTips">请根据提示张嘴</string>
+    <string name="app_name">翰迪认证</string>
+    <string name="blink">请眨眼</string>
+    <string name="blinkAgain">再眨一次</string>
+    <string name="closeMouth">闭嘴</string>
+    <string name="description"/>
+    <string name="doAgain">再做一次</string>
+    <string name="floatWindowDefault">提示动作前请正对摄像头</string>
+    <string name="headFront">请缓慢仰头并回位</string>
+    <string name="headLeft">请向左摇头并回位</string>
+    <string name="headNod">请向下点头并回位</string>
+    <string name="headRight">请向右摇头并回位</string>
+    <string name="headShake">左右摇头</string>
+    <string name="headUpDown">上下点头</string>
+    <string name="headYaw">左右歪头</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_world_dbimage">Hello world!</string>
+    <string name="lowQuality">请调整角度光线，稳定镜头</string>
+    <string name="nameNotNull">姓名不能为空</string>
+    <string name="nodAgain">再点一次</string>
+    <string name="openAgain">再张一次</string>
+    <string name="openMouth">请反复张嘴</string>
+    <string name="order">指令</string>
+    <string name="order_finish">完毕</string>
+    <string name="scan_text2">数据处理中...</string>
+    <string name="scan_title">人脸识别</string>
+    <string name="set_face">设置人脸密码</string>
+    <string name="shakeAgain">再摇一次</string>
+    <string name="stayMouth">保持</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_test_dbimage">TestActivity</string>
+    <string name="wait">很好,下一步</string>
+    <string name="wrongPosture">请将头部摆正</string>
+    <string name="yawAgain">再偏一次</string>
+    <string name="yitu_camera_app_name">相机SDK</string>
+    <string name="yitu_camera_camera_disabled">由于安全政策的限制，相机已被禁用。</string>
+    <string name="yitu_camera_camera_error_title">相机发生错误</string>
+    <string name="yitu_camera_camera_menu_more_label">更多选项</string>
+    <string name="yitu_camera_cannot_connect_camera">无法连接到相机。</string>
+    <string name="yitu_camera_count_down_title_text">拍照倒计时中</string>
+    <string name="yitu_camera_dialog_ok">确定</string>
+    <string name="yitu_camera_effect_none">无</string>
+    <string name="yitu_camera_find_faces">五官已找到</string>
+    <string name="yitu_camera_find_no_faces">没找到五官,来个正脸!</string>
+    <string name="yitu_camera_flash_off">未使用闪光灯</string>
+    <string name="yitu_camera_flash_on">使用了闪光灯</string>
+    <string name="yitu_camera_image_file_name_format" translatable="false">"'IMG'_yyyyMMdd_HHmmss"</string>
+    <string name="yitu_camera_out_of_memory_warning">内存不足，请清理其他程序后重试。</string>
+    <string name="yitu_camera_pref_camera_countdown_label_fifteen">15秒</string>
+    <string name="yitu_camera_pref_camera_countdown_label_off">关闭倒计时器</string>
+    <string name="yitu_camera_pref_camera_countdown_label_one">1秒</string>
+    <string name="yitu_camera_pref_camera_countdown_label_ten">10秒</string>
+    <string name="yitu_camera_pref_camera_countdown_label_three">3秒</string>
+    <string name="yitu_camera_pref_camera_flashmode_default" translatable="false">auto</string>
+    <string name="yitu_camera_pref_camera_flashmode_entry_auto">自动</string>
+    <string name="yitu_camera_pref_camera_flashmode_entry_off">关</string>
+    <string name="yitu_camera_pref_camera_flashmode_entry_on">开</string>
+    <string name="yitu_camera_pref_camera_flashmode_label">闪光灯模式</string>
+    <string name="yitu_camera_pref_camera_flashmode_label_auto">自动闪光灯</string>
+    <string name="yitu_camera_pref_camera_flashmode_label_off">关闭闪光灯</string>
+    <string name="yitu_camera_pref_camera_flashmode_label_on">打开闪光灯</string>
+    <string name="yitu_camera_pref_camera_flashmode_no_flash" translatable="false">no_flash</string>
+    <string name="yitu_camera_pref_camera_flashmode_title">Flash mode</string>
+    <string name="yitu_camera_pref_camera_focusmode_entry_auto">自动</string>
+    <string name="yitu_camera_pref_camera_focusmode_entry_infinity">无限远</string>
+    <string name="yitu_camera_pref_camera_focusmode_entry_macro">微距</string>
+    <string name="yitu_camera_pref_camera_focusmode_label_auto">自动</string>
+    <string name="yitu_camera_pref_camera_focusmode_label_infinity">无限远</string>
+    <string name="yitu_camera_pref_camera_focusmode_label_macro">微距</string>
+    <string name="yitu_camera_pref_camera_focusmode_title">对焦方式</string>
+    <string name="yitu_camera_pref_camera_hdr_default">@string/yitu_camera_setting_off_value</string>
+    <string name="yitu_camera_pref_camera_hdr_label">HDR</string>
+    <string name="yitu_camera_pref_camera_hdr_plus_default">@string/yitu_camera_setting_off_value</string>
+    <string name="yitu_camera_pref_camera_id_default" translatable="false">0</string>
+    <string name="yitu_camera_pref_camera_id_entry_back">后置</string>
+    <string name="yitu_camera_pref_camera_id_entry_front">前置</string>
+    <string name="yitu_camera_pref_camera_id_label_back">前置摄像头</string>
+    <string name="yitu_camera_pref_camera_id_label_front">后置摄像头</string>
+    <string name="yitu_camera_pref_camera_id_title">选择摄像头</string>
+    <string name="yitu_camera_pref_camera_picturesize_entry_13mp">1300万像素</string>
+    <string name="yitu_camera_pref_camera_picturesize_entry_1_3mp">130万像素</string>
+    <string name="yitu_camera_pref_camera_picturesize_entry_1_5mp">150万像素</string>
+    <string name="yitu_camera_pref_camera_picturesize_entry_1mp">100万像素</string>
+    <string name="yitu_camera_pref_camera_picturesize_entry_2mp">200万像素</string>
+    <string name="yitu_camera_pref_camera_picturesize_entry_2mp_wide">200万像素 (16:9)</string>
+    <string name="yitu_camera_pref_camera_picturesize_entry_3mp">300万像素</string>
+    <string name="yitu_camera_pref_camera_picturesize_entry_4mp">400万像素</string>
+    <string name="yitu_camera_pref_camera_picturesize_entry_5mp">500万像素</string>
+    <string name="yitu_camera_pref_camera_picturesize_entry_8mp">800万像素</string>
+    <string name="yitu_camera_pref_camera_picturesize_entry_qvga">QVGA</string>
+    <string name="yitu_camera_pref_camera_picturesize_entry_vga">VGA</string>
+    <string name="yitu_camera_pref_camera_picturesize_title">照片尺寸</string>
+    <string name="yitu_camera_pref_camera_scenemode_title">取景模式</string>
+    <string name="yitu_camera_pref_camera_settings_category">相机设置</string>
+    <string name="yitu_camera_pref_camera_timer_default" translatable="false">0</string>
+    <string name="yitu_camera_pref_camera_timer_sound_default">@string/yitu_camera_setting_on_value</string>
+    <string name="yitu_camera_pref_camera_timer_sound_title">倒计时过程中发出提示音</string>
+    <string name="yitu_camera_pref_camera_timer_title">倒计时器</string>
+    <string name="yitu_camera_pref_camera_video_flashmode_default" translatable="false">off</string>
+    <string name="yitu_camera_pref_camera_whitebalance_default" translatable="false">auto</string>
+    <string name="yitu_camera_pref_exposure_default" translatable="false">0</string>
+    <string name="yitu_camera_pref_exposure_label">曝光</string>
+    <string name="yitu_camera_pref_exposure_title">曝光</string>
+    <string name="yitu_camera_sd_cannot_used">手机存储无法使用，请检查后重试！</string>
+    <string name="yitu_camera_set_duration">设置倒数时间（秒）</string>
+    <string name="yitu_camera_setting_off">关</string>
+    <string name="yitu_camera_setting_off_value" translatable="false">off</string>
+    <string name="yitu_camera_setting_on">开</string>
+    <string name="yitu_camera_setting_on_value" translatable="false">on</string>
+    <string name="yitu_camera_tap_to_focus">触摸即可对焦</string>
+    <string name="yitu_camera_time_lapse_hours">小时</string>
+    <string name="yitu_camera_time_lapse_interval_set">完成</string>
+    <string name="yitu_camera_time_lapse_minutes">分钟</string>
+    <string name="yitu_camera_time_lapse_seconds">秒</string>
+    <string name="yitu_camerautil_app_name">CameraUtil</string>
+    <string name="yitu_face_action_settings">Settings</string>
+    <string name="yitu_face_app_name">手机活体检测</string>
+    <string name="yitu_face_button_i_know_text">我知道了</string>
+    <string name="yitu_face_choose_user">请选择用户</string>
+    <string name="yitu_face_comparing">正在比对...</string>
+    <string name="yitu_face_count_down_max">剩余5秒</string>
+    <string name="yitu_face_database_image_hint_back">请拍摄身份证背面，确保文字清晰</string>
+    <string name="yitu_face_database_image_hint_front">请拍摄身份证正面，确保人像和文字清晰</string>
+    <string name="yitu_face_do_not_disturbe_me">下次不再提示</string>
+    <string name="yitu_face_error_empty_username">用户名不能为空</string>
+    <string name="yitu_face_error_invalid_username">用户名只能包含英文大小写、数字、下划线，长度3-80字符</string>
+    <string name="yitu_face_error_missing_born_year">请选择出生年份</string>
+    <string name="yitu_face_error_missing_gender">请填写性别</string>
+    <string name="yitu_face_error_missing_nation">请选择民族</string>
+    <string name="yitu_face_error_password_too_short">密码必须大于6位字符</string>
+    <string name="yitu_face_error_too_long_username">用户名过长</string>
+    <string name="yitu_face_error_two_password_unmatch">两次密码输入不一致</string>
+    <string name="yitu_face_face_too_small">人脸太小，请靠近手机屏幕</string>
+    <string name="yitu_face_get_ready">请将脸部对准取景框\n验证过程中确保脸部始终在取景框中</string>
+    <string name="yitu_face_hello_blank_fragment">Hello blank fragment</string>
+    <string name="yitu_face_hello_world">Hello world!</string>
+    <string name="yitu_face_hint_check_user_exists">检查用户是否存在</string>
+    <string name="yitu_face_hint_database_image_not_exists">登记照片不存在</string>
+    <string name="yitu_face_hint_database_image_upload_fail">身份证照片上传失败</string>
+    <string name="yitu_face_hint_database_image_upload_succ">身份证照片上传成功</string>
+    <string name="yitu_face_hint_face_too_small">请把手机靠近人脸</string>
+    <string name="yitu_face_hint_fail_initializing">无法初始化，请检查网络链接</string>
+    <string name="yitu_face_hint_focus_and_start">请把脸放在圆圈内\n检测自动开始</string>
+    <string name="yitu_face_hint_focus_here">请正对手机屏幕</string>
+    <string name="yitu_face_hint_illum_too_dark">光线太弱，人脸区域亮度不够</string>
+    <string name="yitu_face_hint_illum_too_strong">光线太强</string>
+    <string name="yitu_face_hint_illum_uneven">人脸上亮度不均匀</string>
+    <string name="yitu_face_hint_initializing">正在初始化，请稍后…</string>
+    <string name="yitu_face_hint_need_meld_light">请在温和的光线下进行扫描，避免检测脸部光线不均，及脸部遮挡</string>
+    <string name="yitu_face_hint_no_face_detected">没有检测到人脸</string>
+    <string name="yitu_face_hint_not_implemented">此功能还未实现!</string>
+    <string name="yitu_face_hint_pair_verify_failed">您好像不是用户本人?</string>
+    <string name="yitu_face_hint_pair_verifying">正在比对…</string>
+    <string name="yitu_face_hint_place_id_card">请将身份证对准辅助框\n避免身份证上出现阴影</string>
+    <string name="yitu_face_hint_please_wait">请稍后…</string>
+    <string name="yitu_face_hint_session_fail">比对失败</string>
+    <string name="yitu_face_hint_session_succ">比对通过</string>
+    <string name="yitu_face_hint_user_not_exists">用户不存在</string>
+    <string name="yitu_face_hint_verification_pass">比对通过！</string>
+    <string name="yitu_face_hint_verification_timeout">比对超时，请重试</string>
+    <string name="yitu_face_hint_verifying">请将人脸放置在屏幕中央椭圆形区域内…</string>
+    <string name="yitu_face_keep_face_in_frame">请将人脸对准取景框内部</string>
+    <string name="yitu_face_service_healthy">服务器连接成功</string>
+    <string name="yitu_face_service_unhealthy">无法初始化，请检查网络链接</string>
+    <string name="yitu_face_step_user_hint">1. 静态验证: 验证是否为用户本人; \n\n2. 动态验证: 验证是否为真人，而非使用照片、视频等伪造其他人进行验证</string>
+    <string name="yitu_face_step_user_hint_title">人脸登录验证分为静态验证和动态验证</string>
+    <string name="yitu_string_count_down">倒计时</string>
+    <string name="yitu_string_second">秒</string>
+    <string name="yitu_waiting_result">正在等待比对结果…</string>
+    <string name="zt_open_msg_weate">请稍候</string>
+    <style name="AppTheme" parent="android:Theme.Light">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="OnScreenHintTextAppearance">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+        <item name="android:textColorHighlight">#FFFF9200</item>
+        <item name="android:textColorHint">#808080</item>
+        <item name="android:textColorLink">#5C5CFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="OnScreenHintTextAppearance.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/secondary_text_dark</item>
+    </style>
+    <style name="PopupTitleSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/yitu_camera_popup_title_color</item>
+    </style>
+    <style name="PopupTitleText">
+        <item name="android:textSize">@dimen/yitu_camera_popup_title_text_size</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/yitu_camera_popup_title_color</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="ReviewControlIcon">
+        <item name="android:layout_height">@dimen/yitu_camera_switcher_size</item>
+        <item name="android:layout_width">@dimen/yitu_camera_switcher_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/yitu_camera_bg_pressed</item>
+    </style>
+    <style name="SettingItemList">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:listSelector">@drawable/yitu_camera_bg_pressed</item>
+    </style>
+    <style name="SettingItemTitle">
+        <item name="android:textSize">@dimen/yitu_camera_setting_item_text_size</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/yitu_camera_primary_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="SettingPopupWindow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/yitu_camera_setting_popup_right_margin</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="SettingRow">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/yitu_camera_setting_row_height</item>
+        <item name="android:paddingLeft">@dimen/yitu_camera_setting_item_list_margin</item>
+        <item name="android:paddingRight">@dimen/yitu_camera_setting_item_list_margin</item>
+        <item name="android:background">@drawable/yitu_camera_setting_picker</item>
+    </style>
+    <style name="SwitcherButton">
+        <item name="android:layout_width">@dimen/yitu_camera_switcher_size</item>
+        <item name="android:layout_height">@dimen/yitu_camera_switcher_size</item>
+        <item name="android:background">@drawable/yitu_camera_bg_pressed_exit_fading</item>
+    </style>
+    <style name="Theme.Camera" parent="android:Theme.NoTitleBar.Fullscreen">
+    </style>
+    <style name="Theme.ProxyLauncher" parent="@android:Theme.Translucent.NoTitleBar">
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <style name="mydialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="zt_open_all_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/hy_open_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="zt_open_ccr_sdk_editview">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">#B7B7B7</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="zt_open_ccr_sdk_textview">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="zt_open_checkIDInfo_editText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#787878</item>
+        <item name="android:textColorHint">#B7B7B7</item>
+    </style>
+    <style name="zt_open_checkIDInfo_textView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#6B6B6B</item>
+    </style>
+    <style name="zt_open_dialogstyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 自己想要的背景 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/zt_open_transparent</item>
+        <!-- 背景半透明 -->
+    </style>
+    <style name="zt_open_progress_view_tv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/zt_open_empty_back</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#93979b</item>
+    </style>
+    <style name="zt_open_videoapprove_editText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/zt_open_red_headview_background</item>
+    </style>
+</resources>

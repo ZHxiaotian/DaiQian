@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gtczr_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dip"
+    android:orientation="vertical" >
+
+    <!-- ###############共同偿债人################ -->
+
+    <TextView
+        style="@style/content_title"
+        android:text="共同偿债人" />
+    <!-- 共同偿债人姓名和出生年月 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <!-- 共同偿债人姓名 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:layout_marginRight="18sp"
+                android:text="*偿债人:" />
+
+            <EditText
+                android:id="@+id/gtczrxm_edittext"
+                style="@style/content_item_edittext" />
+        </LinearLayout>
+
+        <!-- 共同偿债人手机号码 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="*手机号码:" />
+
+            <EditText
+                android:id="@+id/gtczrsjhm_edittext"
+                style="@style/content_item_edittext"
+                android:inputType="number"
+                android:maxLength="11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <!-- 共同偿债人姓名和出生年月 end -->
+    <!-- 共同偿债人证件类型、证件号码 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <!-- 证件类型 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="*证件类型:" />
+
+            <RelativeLayout style="@style/content_item_layout" >
+
+                <TextView
+                    android:id="@+id/gtczrzjlx_spinner_text"
+                    style="@style/spinner_textview"
+                    android:layout_toLeftOf="@+id/gtczrzjlx_btn" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/gtczrzjlx_btn"
+                    style="@style/spinner_dropdown" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 证件号码 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="*证件号码:" />
+
+            <EditText
+                android:id="@+id/gtczrzjhm_edittext"
+                style="@style/content_item_edittext"
+                android:digits="0123456789xX"
+                android:inputType="textEmailAddress"
+                android:maxLength="18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <!-- 共同偿债人证件类型、证件号码end -->
+
+
+    <!-- 出生年月 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text=" 出生年月:" />
+            
+            
+               
+            <TextView
+                android:id="@+id/gtczrcsny_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+
+        
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+    </LinearLayout>
+    <!-- 共同偿债人手机号码 end -->
+
+
+    <!-- 共同偿债人所在单位、单位性质 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <!-- 所在单位 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text=" 所在单位:" />
+
+            <EditText
+                android:id="@+id/gtczrszdw_edittext"
+                style="@style/content_item_edittext" />
+        </LinearLayout>
+
+        <!-- 单位性质 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="单位性质:" />
+
+            <RelativeLayout style="@style/content_item_layout" >
+
+                <TextView
+                    android:id="@+id/gtczrdwxz_spinner_text"
+                    style="@style/spinner_textview"
+                    android:layout_toLeftOf="@+id/gtczrdwxz_btn" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/gtczrdwxz_btn"
+                    style="@style/spinner_dropdown" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- 共同偿债人 单位职务和单位电话 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <!-- 单位职务 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text=" 单位职务:" />
+
+            <EditText
+                android:id="@+id/gtczrdwzw_edittext"
+                style="@style/content_item_edittext" />
+        </LinearLayout>
+
+        <!-- 单位电话 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="单位电话:" />
+
+            <EditText
+                android:id="@+id/gtczrdwdh_edittext"
+                style="@style/content_item_edittext"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- 共同偿债人单位地址 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 省市县start -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text=" 单位地址:" />
+
+            <!-- 省 -->
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_toLeftOf="@+id/gtczrdwdz_sheng_text" >
+
+                    <EditText
+                        android:id="@+id/gtczrdwdz_sheng_spinner_text"
+                        style="@style/content_item_edittext_gcpp"
+                        android:layout_toLeftOf="@+id/gtczrdwdz_sheng_btn" >
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/gtczrdwdz_sheng_btn"
+                        style="@style/spinner_dropdown" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/gtczrdwdz_sheng_text"
+                    style="@style/content_item_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:text="省" />
+            </RelativeLayout>
+            <!-- 市 -->
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_toLeftOf="@+id/gtczrdwdz_shi_text" >
+
+                    <EditText
+                        android:id="@+id/gtczrdwdz_shi_spinner_text"
+                        style="@style/content_item_edittext_gcpp"
+                        android:layout_toLeftOf="@+id/gtczrdwdz_shi_btn" >
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/gtczrdwdz_shi_btn"
+                        style="@style/spinner_dropdown" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/gtczrdwdz_shi_text"
+                    style="@style/content_item_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:text="市" />
+            </RelativeLayout>
+            <!-- 县 -->
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+           
+                
+                   <EditText
+                  android:id="@+id/gtczrdwdz_xian_spinner_text"
+                    style="@style/content_item_edittext"
+                    android:layout_toLeftOf="@+id/gtczrdwdz_xian_text"
+                    />
+
+                <TextView
+                    android:id="@+id/gtczrdwdz_xian_text"
+                    style="@style/content_item_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:text="区/县" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 省市县 end -->
+
+
+        <!-- 共同偿债人详细地址 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="单位地址:"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/gtczrdwdz_xx_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="600dip"
+                android:hint="共同偿债人单位详细地址" />
+        </LinearLayout>
+        <!-- 单位地址详细地址 end -->
+
+    </LinearLayout>
+
+</LinearLayout>

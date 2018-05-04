@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="loading_dialog_bg">#4F000000</color>
+
+    <color name="lock_background_color">#222222</color>
+    <color name="transparent">#00000000</color>
+    <color name="red1">#bc1c21</color>
+    <color name="red2">#8b1d21</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="content_bg">#f5f5f5</color>
+    <color name="content_tab_selected">#bc1c21</color>
+    <color name="content_tab_normal">#333942</color>
+    <color name="content_text">#656867</color>
+    <color name="content_text_default">#aeaeae</color>
+    <color name="add_picture_bg">#c7c2c1</color>
+    <color name="add_picture_text">#676868</color>
+    <!-- <color name="table_line">#afaeae</color> -->
+    <color name="table_title">#f1d8cb</color>
+    <color name="titleBackgroudblue">#3490ca</color>
+    <color name="titleTextColor">#FFFEFF</color>
+    <color name="menuTextColor">#8b1d21</color>
+
+    <!-- 贷钱系统主页6宫格字体颜色定义 -->
+    <color name="content_item_diaoyanbaogao">#A64957</color>
+    <color name="content_item_diaochayuyue">#1E628F</color>
+    <color name="content_item_ruhudiaocha">#1E8990</color>
+    <color name="content_item_baobiaochaxun">#51A2A7</color>
+    <color name="content_item_gonggaotongzhi">#61A4D7</color>
+    <color name="content_item_gerenshezhi">#D0732E</color>
+    <color name="zoufangtextcolor">#ededed</color>
+    <color name="zoufangtextcolor1">#4c4c4c</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorMeetingTitleBar">#212121</color>
+    <color name="transparent_background">#ff000000</color>
+
+</resources>

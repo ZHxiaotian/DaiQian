@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+
+    }
+}
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.zonesun.daiqian.activity"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.1.6"
+//        multiDexEnabled true
+    }
+    signingConfigs {
+        debug {
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        release {
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+//            signingConfig signingConfigs.release
+           minifyEnabled false
+//            debuggable false
+//
+//            minifyEnabled true
+//
+//            zipAlignEnabled true
+//
+//            shrinkResources true
+
+//            signingConfig signingConfigs.release
+//            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/services/com.fasterxml.jackson.core.ObjectCodec'
+        exclude 'META-INF/services/com.fasterxml.jackson.core.JsonFactory'
+        exclude 'META-INF/maven/com.squareup.okhttp/okhttp/pom.properties'
+        exclude 'META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.properties'
+        exclude 'META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.xml'
+        exclude 'META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.properties'
+        exclude 'META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.properties'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okhttp/okhttp/pom.xml'
+        exclude 'META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.properties'
+        exclude 'META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.xml'
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        // as noted by @Vishnuvathsan you may also need to include
+        // variations on the file name. It depends on your dependencies.
+        // Some other common variations on notice and license file names
+        exclude 'META-INF/notice'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license'
+        exclude 'META-INF/license.txt'
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':BypayLiving')
+    compile project(':PushSDK_DQ')
+    compile project(':slidingmenu_library')
+    compile project(':updateFun')
+    compile files('libs/Bughd_android_sdk_v1.3.7.jar')
+    compile files('libs/eventbus-2.4.0.jar')
+    compile files('libs/fastjson-1.1.46.android.jar')
+    compile files('libs/nohttp1.0.5-include-source.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/baidumapapi_base_v4_3_0.jar')
+    compile files('libs/baidumapapi_cloud_v4_3_0.jar')
+    compile files('libs/baidumapapi_map_v4_3_0.jar')
+    compile files('libs/baidumapapi_radar_v4_3_0.jar')
+    compile files('libs/baidumapapi_search_v4_3_0.jar')
+    compile files('libs/baidumapapi_util_v4_3_0.jar')
+    compile files('libs/locSDK_6.13.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+//    compile ('com.wilddog.client:wilddog-video-room-android:2.1.2'){exclude group:"com.squareup.okhttp3",module:"okhttp"}
+//    compile 'com.wilddog.client:wilddog-auth-android:2.0.6'
+//    configurations{compile.exclude group:"org.json",module:"json"}
+//    compile'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'fr.bmartel:jspeedtest:1.30'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'org.xutils:xutils:3.3.36'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:24.2.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.yanzhenjie:permission:1.0.6'
+}

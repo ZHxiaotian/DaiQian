@@ -1,0 +1,112 @@
+[
+    {
+        "outputFile": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 182
+                },
+                "from": {
+                    "file": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\values-v11\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 177,
+                        "endLine": 8,
+                        "endColumn": 12,
+                        "endOffset": 304
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 187,
+                    "endLine": 8,
+                    "endColumn": 12,
+                    "endOffset": 436
+                },
+                "from": {
+                    "file": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\values-v11\\yitu_camera_styles.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1397,
+                        "endLine": 32,
+                        "endColumn": 12,
+                        "endOffset": 1646
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 441,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 740
+                },
+                "from": {
+                    "file": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\values-v11\\yitu_camera_styles.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1651,
+                        "endLine": 37,
+                        "endColumn": 12,
+                        "endOffset": 1950
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 745,
+                    "endLine": 23,
+                    "endColumn": 12,
+                    "endOffset": 1351
+                },
+                "from": {
+                    "file": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\values-v11\\yitu_camera_styles.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 786,
+                        "endLine": 28,
+                        "endColumn": 12,
+                        "endOffset": 1392
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1356,
+                    "endLine": 25,
+                    "endColumn": 12,
+                    "endOffset": 1450
+                },
+                "from": {
+                    "file": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\values-v11\\yitu_camera_styles.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 687,
+                        "endLine": 18,
+                        "endColumn": 12,
+                        "endOffset": 781
+                    }
+                }
+            }
+        ]
+    }
+]

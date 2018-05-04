@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\anim\\yitu_face_cycle.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\anim\\yitu_face_cycle.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\anim\\yitu_face_fadeout.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\anim\\yitu_face_fadeout.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\anim\\yitu_camera_count_down_exit.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\anim\\yitu_camera_count_down_exit.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\anim\\yitu_face_flash_out.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\anim\\yitu_face_flash_out.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\anim\\yitu_face_flash_back.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\anim\\yitu_face_flash_back.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\anim\\yitu_face_slide_in.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\anim\\yitu_face_slide_in.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\anim\\yitu_face_shake.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\anim\\yitu_face_shake.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\anim\\yitu_face_slide_out.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\anim\\yitu_face_slide_out.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\anim\\yitu_face_fadein.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\anim\\yitu_face_fadein.xml"
+    }
+]

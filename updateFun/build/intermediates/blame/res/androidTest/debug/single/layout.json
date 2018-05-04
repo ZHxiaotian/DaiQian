@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\download_notification_layout.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\bundles\\debug\\res\\layout\\download_notification_layout.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\download_dialog.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\bundles\\debug\\res\\layout\\download_dialog.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\update_dialog.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\bundles\\debug\\res\\layout\\update_dialog.xml"
+    }
+]

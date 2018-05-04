@@ -1,0 +1,24 @@
+<resources>
+    <string name="yitu_face_app_name">手机活体检测</string>
+
+    <string name="yitu_face_hello_world">Hello world!</string>
+    <string name="yitu_face_action_settings">Settings</string>
+
+    <string name="yitu_face_hint_session_succ">比对通过</string>
+    <string name="yitu_face_hint_session_fail">比对失败</string>
+
+    <string name="yitu_face_get_ready">请将脸部对准取景框\n验证过程中确保脸部始终在取景框中</string>
+
+    <string name="yitu_waiting_result">正在等待比对结果&#8230;</string>
+
+    <string name="yitu_face_count_down_max">剩余5秒</string>
+
+    <string name="yitu_face_face_too_small">人脸太小，请靠近手机屏幕</string>
+
+    <string name="yitu_face_keep_face_in_frame">请将人脸对准取景框内部</string>
+
+    <string name="yitu_face_comparing">正在比对...</string>
+
+    <string name="yitu_face_hint_focus_and_start">请把脸放在圆圈内\n检测自动开始</string>
+</resources>
+

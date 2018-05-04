@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <!-- 申请人配偶征信状况   申请人征信状况 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="*申请人征信状况" />
+
+            <com.zonesun.daiqian.view.MyRelativeLayout
+                android:id="@+id/rl_sqrzx"
+                style="@style/content_item_layout" >
+
+                <TextView
+                    android:id="@+id/sqrzxzk_spinner_text"
+                    style="@style/spinner_textview" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/sqrzxzk_btn"
+                    style="@style/spinner_dropdown" />
+            </com.zonesun.daiqian.view.MyRelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="申请人学历" />
+
+            <com.zonesun.daiqian.view.MyRelativeLayout
+                android:id="@+id/rl_sqrxl"
+                style="@style/content_item_layout" >
+
+                <TextView
+                    android:id="@+id/sqrxl_spinner_text"
+                    style="@style/spinner_textview"
+                    android:layout_toLeftOf="@+id/sqrxl_btn" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/sqrxl_btn"
+                    style="@style/spinner_dropdown" />
+            </com.zonesun.daiqian.view.MyRelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 申请人学历    申请人家庭收入还贷比 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <!-- 申请人学历 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        <!-- 申请人家庭收入还贷比 -->
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

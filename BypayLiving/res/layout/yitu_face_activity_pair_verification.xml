@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".VerificationActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/cameraPreviewLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <view
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.yitutech.camerasdk.ui.CameraRootView"
+            android:id="@+id/cameraPreviewView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/debugPreviewImage"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitCenter" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/everythingAboveCameraPreviewLayout">
+
+            <RelativeLayout
+                android:layout_width="240dp"
+                android:layout_height="320dp"
+                android:id="@+id/faceSkeletonImageLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp">
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/face_skeleton"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/face_skeleton_succ"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true" />
+
+                <view
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    class="com.yitutech.face.uicomponents.ScanEffectView"
+                    android:id="@+id/scanbarView"
+                    android:layout_alignParentTop="true" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:id="@+id/faceShadeTopImageView"
+                android:src="@drawable/yitu_face_black_shadow"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/faceShadeBottomImageView"
+                android:src="@drawable/yitu_face_black_shadow"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/faceSkeletonImageLayout" />
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/faceShadeLeftImageView"
+                android:src="@drawable/yitu_face_black_shadow"
+                android:layout_toLeftOf="@+id/faceSkeletonImageLayout"
+                android:layout_toStartOf="@+id/faceSkeletonImageLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/faceShadeTopImageView"
+                android:layout_above="@+id/faceShadeBottomImageView" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/faceShadeRightImageView"
+                android:src="@drawable/yitu_face_black_shadow"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/faceSkeletonImageLayout"
+                android:layout_toEndOf="@+id/faceSkeletonImageLayout"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/faceShadeTopImageView"
+                android:layout_above="@+id/faceShadeBottomImageView" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yitu_face_keep_face_in_frame"
+                android:id="@+id/actionHintText"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#ffe9e9e9"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignBottom="@+id/faceShadeTopImageView"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/yitu_face_get_ready"
+                android:id="@+id/readyHint"
+                android:textColor="#ffe9e9e9"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="false"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentTop="false"
+                android:visibility="invisible"
+                android:layout_below="@+id/faceSkeletonImageLayout"
+                android:id="@+id/stepResultHintLayout">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <view
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            class="com.yitutech.face.uicomponents.CircularCountDownProgressBar"
+            android:id="@+id/timeoutHintView"
+            android:layout_margin="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DEBUG信息"
+        android:id="@+id/debugTimeUsedTextView"
+        android:textColor="#ff5aff0a"
+        android:visibility="invisible"
+        android:textSize="10sp" />
+
+</RelativeLayout>

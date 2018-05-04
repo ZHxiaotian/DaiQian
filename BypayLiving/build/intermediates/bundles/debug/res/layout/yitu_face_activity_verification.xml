@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".VerificationActivity">
+
+    <com.yitutech.face.uicomponents.FixedAspectLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        app:aspectRatio="1.33333"
+        app:fixMode="fixWidth">
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.yitutech.camerasdk.ui.CameraRootView"
+            android:id="@+id/cameraPreviewView"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"/>
+    </com.yitutech.face.uicomponents.FixedAspectLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/faceSkeletonImageLayout"
+            android:layout_weight="5">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView"
+                android:src="@drawable/yitu_face_without_skeleton"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="FPS"
+                android:id="@+id/frameRateText"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textIsSelectable="false"
+                android:textStyle="bold"
+                android:textColor="#ff0f0dff"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:layout_width="fill_parent"
+            android:layout_height="260dp"
+            android:id="@+id/instructionView"
+            android:inAnimation="@anim/yitu_face_slide_in"
+            android:outAnimation="@anim/yitu_face_slide_out"
+            android:background="#000000">
+
+            <include android:id="@+id/instroInstruct"
+                layout="@layout/yitu_face_instruction_layout"/>
+
+            <include android:id="@+id/dummyInstruct"
+                layout="@layout/yitu_face_instruction_dummy_layout"/>
+
+        </ViewFlipper>
+    </LinearLayout>
+
+</RelativeLayout>

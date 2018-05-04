@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 通知标题 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="通知标题 :" />
+
+                <TextView
+                    android:id="@+id/tv_tzbt"
+                    style="@style/content_item_title"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+            <!-- 发送人 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="发送人 :" />
+
+                <TextView
+                    android:id="@+id/tv_fsr"
+                    style="@style/content_item_title"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+            <!-- 接收人 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="接收人  :" />
+
+                <TextView
+                    android:id="@+id/tv_jsr"
+                    style="@style/content_item_title"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+
+            <!-- 发送时间 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="发送时间 :" />
+
+                <TextView
+                    android:id="@+id/tv_fssj"
+                    style="@style/content_item_title"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+            <!-- 通知内容 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="通知内容 :" />
+
+                <TextView
+                    android:id="@+id/tv_tznr"
+                    style="@style/content_item_title"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

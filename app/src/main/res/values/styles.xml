@@ -1,0 +1,192 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="NotitleTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="GnEmptyTheme"></style>
+    <!-- 顶部菜单的样式 -->
+    <style name="tab_style">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <!-- 上面这一句可以把radiobutton的图标去掉 <item name="android:layout_gravity">top</item> -->
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:background">@drawable/rb_bg</item>
+        <!-- <item name="android:textColor">@color/white</item> -->
+    </style>
+    <!-- Spinner文本样式 -->
+    <style name="spinner_textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">16sp</item>
+
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+    <!-- Spinner下拉按钮样式 -->
+    <style name="spinner_dropdown">
+        <item name="android:layout_width">35dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/gray</item>
+        <item name="android:src">@drawable/spinner_arrow_pressed</item>
+    </style>
+
+    <!-- content中的title -->
+    <style name="content_title">
+        <item name="android:layout_width">150dip</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:background">@drawable/content_title_bg</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- content中的item title -->
+    <style name="content_item_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/content_text</item>
+    </style>
+
+    <!-- content中的item edittext -->
+    <style name="content_item_edittext">
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:layout_marginRight">20sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+    </style>
+    <!-- content购车品牌中的item edittext -->
+    <style name="content_item_edittext_gcpp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginRight">20sp</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+    </style>
+
+    <!-- content中的item RelativeLayout -->
+    <style name="content_item_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:layout_marginRight">20sp</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+    </style>
+
+    <!-- report中的 title -->
+    <style name="report_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:background">@color/table_title</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/content_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- report中的 text -->
+    <style name="report_text">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:background">@drawable/table_line_bg2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/content_text</item>
+    </style>
+
+    <style name="report_text1">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/table_line_bg2</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/content_text</item>
+    </style>
+
+    <!-- image中的 layout -->
+    <style name="image_layout">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- image中的 img -->
+    <style name="image_img">
+        <item name="android:layout_width">100dip</item>
+        <item name="android:layout_height">100dip</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/add_picture_selecter</item>
+    </style>
+
+    <!-- image中的 text -->
+    <style name="image_text">
+        <item name="android:layout_width">100dip</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:background">@color/add_picture_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/add_picture_text</item>
+    </style>
+
+    <!-- 走访文字 属性 -->
+    <style name="zoufang_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/zoufangtextcolor1</item>
+        <item name="android:textSize">18sp</item>
+        <!-- <item name="  android:layout_marginLeft">10dp</item> -->
+    </style>
+
+    <style name="AppStart" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/loading_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+   
+</resources>

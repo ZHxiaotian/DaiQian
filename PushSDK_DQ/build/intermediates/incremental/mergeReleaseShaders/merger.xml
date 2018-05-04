@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\Androidprojects\DaiQian\PushSDK_DQ\src\main\shaders"/></dataSet><dataSet config="release"><source path="D:\Androidprojects\DaiQian\PushSDK_DQ\build-types\release\shaders"/></dataSet></merger>

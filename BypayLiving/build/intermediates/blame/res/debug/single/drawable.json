@@ -1,0 +1,210 @@
+[
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_headleft2.jpg",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_headleft2.jpg"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_headup2.jpg",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_headup2.jpg"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_login_button_backgroud.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_login_button_backgroud.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\border.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_face_white_36dp.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\ic_face_white_36dp.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_gray_corner.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_gray_corner.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_ccr_sdk_security_blue.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_ccr_sdk_security_blue.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_camera_btn_new_shutter.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_camera_btn_new_shutter.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_scanbar.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_scanbar.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_scanbar2.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_scanbar2.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_rectangle.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_rectangle.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_dialog_button_selector.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_dialog_button_selector.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_camera_front_black_48dp.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_camera_front_black_48dp.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_ccr_sdk_security_code_gray.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_ccr_sdk_security_code_gray.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_camera_setting_picker.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_camera_setting_picker.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_takepho_button_selector.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_takepho_button_selector.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_ccr_card_selector.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_ccr_card_selector.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_camera_bg_pressed.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_camera_bg_pressed.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_camera_bg_pressed_exit_fading.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_camera_bg_pressed_exit_fading.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_without_skeleton.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_without_skeleton.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_back_button_background.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_back_button_background.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_image_grey600_48dp.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_image_grey600_48dp.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_login_button_textcolor.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_login_button_textcolor.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_uploadimage_bycamera_selector.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_uploadimage_bycamera_selector.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_circular_progress_bar.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_circular_progress_bar.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_over_sign_background.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_over_sign_background.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_headright2.jpg",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_headright2.jpg"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_warning_symbol.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_warning_symbol.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_action_normal.jpg",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_action_normal.jpg"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_skeleton_minimum2.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_skeleton_minimum2.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_camera_front_black_48dp.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\ic_camera_front_black_48dp.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_mouthopen2.jpg",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_mouthopen2.jpg"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_headdown2.jpg",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_headdown2.jpg"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_circular_progress_bar_bg_transparent.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_circular_progress_bar_bg_transparent.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_white_36dp.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_white_36dp.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_takephoto_textcolor_selector.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_takephoto_textcolor_selector.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_circular_progress_bar_inner.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_circular_progress_bar_inner.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_camera_alt_white_48dp.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\ic_camera_alt_white_48dp.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_ccr_card_gt_selector.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_ccr_card_gt_selector.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_uploadimage_bynative_selector.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_uploadimage_bynative_selector.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_idcard_shade_skeleton_minimum1.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_idcard_shade_skeleton_minimum1.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_button.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_button.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_transparent_face_shade.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_transparent_face_shade.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_image_grey600_48dp.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\ic_image_grey600_48dp.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_correct_symbol.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_correct_symbol.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_idcard_shade_skeleton_minimum2.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_idcard_shade_skeleton_minimum2.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_skeleton_minimum3.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_skeleton_minimum3.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_eyeclose2.jpg",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_eyeclose2.jpg"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_test.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\btn_test.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_camera_alt_white_48dp.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_camera_alt_white_48dp.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\yitu_face_black_shadow.png",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\yitu_face_black_shadow.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\BypayLiving\\build\\intermediates\\res\\merged\\debug\\drawable\\hy_open_dialog.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\BypayLiving\\res\\drawable\\hy_open_dialog.xml"
+    }
+]

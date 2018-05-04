@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:orientation="vertical" >
+
+        <!-- 申请人摘要 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/report_title"
+                android:text="申请人摘要" />
+            <!-- 第一行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="申请人姓名" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="张三" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="购车原因" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="结婚" />
+            </LinearLayout>
+
+            <!-- 第二行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="还款来源" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="工资" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="住房情况" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="自有" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="婚姻情况" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="已婚" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 申请人基本情况 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/report_title"
+                android:text="申请人基本情况" />
+            <!-- 第一行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="姓名" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="张三" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="性别" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="男" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="出生年月" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="1985-01-09" />
+            </LinearLayout>
+            <!-- 第二行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="证件类型" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="身份证" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="证件号码" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="131128198501090831" />
+            </LinearLayout>
+
+            <!-- 第三行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="住宅地址" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="5"
+                    android:text="河北省石家庄市槐安路西美小区8号楼3单元102室" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="住宅状况" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="自有" />
+            </LinearLayout>
+
+            <!-- 第四行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="户口所在地" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="5"
+                    android:text="河北省石家庄市槐安路西美小区8号楼3单元102室" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="手机号码" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="15369377402" />
+            </LinearLayout>
+            <!-- 第五行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="工作单位" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="5"
+                    android:text="中国电信集团公司河北省电信分公司" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="职务" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="销售经理" />
+            </LinearLayout>
+            <!-- 第六行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="单位地址" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="5"
+                    android:text="河北省石家庄市裕华区昆仑大街69号(电信大厦)" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="单位电话" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="0311-89876543" />
+            </LinearLayout>
+            <!-- 第七行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="单位性质" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="国企" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="月均收入(元)" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="￥20,000.00" />
+            </LinearLayout>
+            <!-- 第九行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="家庭已有贷款月还款额" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="家庭月收入还贷比" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 申请人配偶情况 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/report_title"
+                android:text="申请人配偶情况" />
+            <!-- 第一行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="姓名" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="王晓红" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="出生年月" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="1986-09-08" />
+            </LinearLayout>
+            <!-- 第二行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="证件类型" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="身份证" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="证件号码" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="1311281986090803212" />
+            </LinearLayout>
+            <!-- 第三行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="移动电话" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="13636112345" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="月均收入(元)" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="￥15,000.00" />
+            </LinearLayout>
+            <!-- 第四行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="单位性质" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="国企" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="单位名称" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="中国电信集团公司河北省电信分公司" />
+            </LinearLayout>
+            <!-- 第五行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="单位地址" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="5"
+                    android:text="河北省石家庄市裕华区昆仑大街69号(电信大厦)" />
+            </LinearLayout>
+            <!-- 第六行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="本人职务" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="业务经理" />
+
+                <TextView
+                    style="@style/report_text"
+                    android:layout_weight="1"
+                    android:text="单位电话" />
+
+                <TextView
+                    style="@style/report_text1"
+                    android:layout_weight="2"
+                    android:text="0311-87654321" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 调查评价 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_line_bg2"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/report_title"
+                android:text="调查评价" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:padding="10dip"
+                android:background="@null"
+                android:text="        申请人:张三 出于结婚原因,计划购买索纳塔￥180,000.00元车一辆，计划贷款￥100,000元，还款来源为每月工资收入￥20,000.00。在银行无其他抵押收入，目前本人无住房，暂住父母家。\n\n以上情况均属实\n"
+                android:textColor="@color/content_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:gravity="right|center_vertical"
+                android:paddingRight="150dip"
+                android:text="调查员:李四 "
+                android:textColor="@color/content_text"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- 调查资料 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/report_title"
+                android:text="调查资料" />
+
+            <!-- 照片第一行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_line_bg2"
+                android:orientation="horizontal" >
+
+                <!-- 第1个图片 -->
+
+                <LinearLayout style="@style/image_layout" >
+
+                    <ImageView style="@style/image_img" />
+
+                    <TextView
+                        style="@style/image_text"
+                        android:text="身份证正面" />
+                </LinearLayout>
+                <!-- 第2个图片 -->
+
+                <LinearLayout style="@style/image_layout" >
+
+                    <ImageView style="@style/image_img" />
+
+                    <TextView
+                        style="@style/image_text"
+                        android:text="身份证反面" />
+                </LinearLayout>
+                <!-- 第3个图片 -->
+
+                <LinearLayout style="@style/image_layout" >
+
+                    <ImageView style="@style/image_img" />
+
+                    <TextView
+                        style="@style/image_text"
+                        android:text="手持身份证" />
+                </LinearLayout>
+
+                <!-- 第4个图片 -->
+
+                <LinearLayout style="@style/image_layout" >
+
+                    <ImageView style="@style/image_img" />
+
+                    <TextView
+                        style="@style/image_text"
+                        android:text="与调查员合影" />
+                </LinearLayout>
+
+                <!-- 第5个图片 -->
+
+                <LinearLayout style="@style/image_layout" >
+
+                    <ImageView style="@style/image_img" />
+
+                    <TextView
+                        style="@style/image_text"
+                        android:text="资质证明" />
+                </LinearLayout>
+            </LinearLayout> <!-- 照片第二行 end -->
+
+
+            <!-- 照片第二行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_line_bg2"
+                android:orientation="horizontal" >
+
+                <!-- 第1个图片 -->
+
+                <LinearLayout style="@style/image_layout" >
+
+                    <ImageView style="@style/image_img" />
+
+                    <TextView
+                        style="@style/image_text"
+                        android:text="申请人小区" />
+                </LinearLayout>
+
+                <!-- 第2个图片 -->
+
+                <LinearLayout style="@style/image_layout" >
+
+                    <ImageView style="@style/image_img" />
+
+                    <TextView
+                        style="@style/image_text"
+                        android:text="申请人所住楼号" />
+                </LinearLayout>
+
+                <!-- 第3个图片 -->
+
+                <LinearLayout style="@style/image_layout" >
+
+                    <ImageView style="@style/image_img" />
+
+                    <TextView
+                        style="@style/image_text"
+                        android:text="申请人所住单元" />
+                </LinearLayout>
+
+                <!-- 第4个图片 -->
+
+                <LinearLayout style="@style/image_layout" >
+
+                    <ImageView style="@style/image_img" />
+
+                    <TextView
+                        style="@style/image_text"
+                        android:text="申请人门牌号" />
+                </LinearLayout>
+
+                <!-- 第5个图片 -->
+
+                <LinearLayout style="@style/image_layout" >
+
+                    <ImageView style="@style/image_img" />
+
+                    <TextView
+                        style="@style/image_text"
+                        android:text="定位" />
+                </LinearLayout>
+            </LinearLayout> <!-- 照片第二行 end -->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="200dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dip"
+            android:background="@drawable/button_selecter"
+            android:text="确认完成"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

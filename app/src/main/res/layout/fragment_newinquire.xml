@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="30dip" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="姓名:" />
+
+            <EditText
+                android:id="@+id/et_newinquire_name"
+                style="@style/content_item_edittext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="*证件类型:" />
+
+            <com.zonesun.daiqian.view.MyRelativeLayout
+                android:id="@+id/rl_newinqire_CredentialsModel"
+                style="@style/content_item_layout" >
+
+                <TextView
+                    android:id="@+id/tv_newinquire_CredentialsModel"
+                    style="@style/spinner_textview"
+                    android:layout_toLeftOf="@+id/ibt_newinquire_Credential" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ibt_newinquire_Credential"
+                    style="@style/spinner_dropdown" />
+            </com.zonesun.daiqian.view.MyRelativeLayout>
+        </LinearLayout>
+
+        <!-- 证件号码 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="*证件号码:" />
+
+            <EditText
+                android:id="@+id/et_newinquire_idnumber"
+                style="@style/content_item_edittext"
+                android:digits="0123456789xX"
+                android:maxLength="18" />
+        </LinearLayout>
+    </LinearLayout>
+       <TextView
+           android:layout_margin="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="身份证复印件当前只可拍身份证，需要连拍两次方可保存上传" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_newinquire_picard"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tianjian" />
+
+            <TextView
+                android:id="@+id/tv_newinquire_picard"
+                android:layout_width="100dip"
+                android:layout_height="30dip"
+                android:background="@color/add_picture_bg"
+                android:gravity="center"
+                android:text="身份证复印件"
+                android:textColor="@color/add_picture_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_newinquire_Authorize"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tianjian" />
+
+            <TextView
+                android:id="@+id/tv_newinquire_Authorize"
+                android:layout_width="100dip"
+                android:layout_height="30dip"
+                android:background="@color/add_picture_bg"
+                android:gravity="center"
+                android:text="授权书"
+                android:textColor="@color/add_picture_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="30dip"
+        android:id="@+id/bt_newinquire_commit"
+        android:layout_width="100dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center"
+        android:background="@color/blue"
+        android:layout_marginBottom="20dip"
+        android:textColor="@color/white"
+        android:text="保存" />
+
+</LinearLayout>

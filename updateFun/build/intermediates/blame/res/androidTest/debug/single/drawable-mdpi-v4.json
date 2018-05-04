@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\material_card.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\material_card.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\button.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\button.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\bg_button_pressed.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\bg_button_pressed.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\bg_button_normal.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\bg_button_normal.xml"
+    },
+    {
+        "merged": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\bg_progress.xml",
+        "source": "D:\\Androidprojects\\DaiQian\\updateFun\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\bg_progress.xml"
+    }
+]

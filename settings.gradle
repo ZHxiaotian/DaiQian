@@ -1,0 +1,3 @@
+include ':app', ':PushSDK_DQ', ':BypayLiving'
+include ':slidingmenu_library'
+include ':updateFun'

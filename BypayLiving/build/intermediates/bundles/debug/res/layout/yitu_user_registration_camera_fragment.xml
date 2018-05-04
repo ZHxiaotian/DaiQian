@@ -1,0 +1,595 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yitutech.face.yitufaceverificationsdk">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/yitu_face_introductionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/yitu_face_linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yitu_face_captureIDCardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/yitu_face_skeleton"
+                android:layout_toStartOf="@+id/yitu_face_skeleton"
+                android:text="拍摄身份证" />
+
+            <Button
+                android:id="@+id/yitu_face_captureLiveImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/yitu_face_captureIDCardButton"
+                android:text="拍摄生活照" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/yitu_face_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/yitu_face_linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="51dp"
+            android:text="请上传证件照片"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yitu_face_captureLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/yitu_face_previewLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true">
+
+            <view
+                android:id="@+id/yitu_face_cameraPreviewView"
+                class="com.yitutech.camerasdk.ui.CameraRootView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/yitu_face_previewCapturedImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/yitu_face_takePictureButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ff303030"
+            android:clickable="true"
+            android:src="@drawable/ic_camera_alt_white_48dp" />
+
+        <RelativeLayout
+            android:id="@+id/yitu_face_captureIDCardHintLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/yitu_face_takePictureButton"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/yitu_face_idcardSkeletonImageView"
+                android:layout_width="250dp"
+                android:layout_height="399dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/yitu_face_idcard_shade_skeleton_minimum2"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/yitu_face_shadowLeftImageView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/yitu_face_idcardSkeletonImageView"
+                android:layout_toStartOf="@+id/yitu_face_idcardSkeletonImageView"
+                android:scaleType="fitXY"
+                android:src="@drawable/yitu_face_black_shadow" />
+
+            <ImageView
+                android:id="@+id/yitu_face_shadowRightImageView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/yitu_face_idcardSkeletonImageView"
+                android:layout_toRightOf="@+id/yitu_face_idcardSkeletonImageView"
+                android:scaleType="fitXY"
+                android:src="@drawable/yitu_face_black_shadow" />
+
+            <ImageView
+                android:id="@+id/yitu_face_shadowTopImageView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/yitu_face_shadowRightImageView"
+                android:layout_toRightOf="@+id/yitu_face_shadowLeftImageView"
+                android:layout_toStartOf="@+id/yitu_face_shadowRightImageView"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/yitu_face_black_shadow"
+                android:layout_above="@+id/yitu_face_idcardSkeletonImageView" />
+
+            <ImageView
+                android:id="@+id/yitu_face_shadowBottomImageView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/yitu_face_shadowRightImageView"
+                android:layout_toRightOf="@+id/yitu_face_shadowLeftImageView"
+                android:layout_toStartOf="@+id/yitu_face_shadowRightImageView"
+                android:scaleType="fitXY"
+                android:src="@drawable/yitu_face_black_shadow"
+                android:layout_below="@+id/yitu_face_idcardSkeletonImageView" />
+
+            <!--<view
+                android:id="@+id/yitu_face_hintFocusIDCardTextView"
+                class="com.yitutech.face.faceverificationsdk.ui.views.VerticalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/yitu_face_hint_place_id_card"
+                android:textColor="#ffcecece" />-->
+
+            <!--<ImageView
+                android:id="@+id/yitu_face_detectedSymbolImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:rotation="90"
+                android:src="@drawable/ic_face_white_36dp"
+                android:visibility="invisible" />-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/yitu_face_takePictureButton"
+            android:id="@+id/yitu_face_captureSemiIDCardHintLayout">
+
+            <!--<ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yitu_face_changeCameraDirectionButton"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_camera_front_black_48dp"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone" />-->
+
+            <RelativeLayout
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:id="@+id/yitu_face_faceSkeletonImageLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/yitu_face_faceSkeletonImageView"
+                    android:scaleType="fitCenter"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:id="@+id/yitu_face_faceShadeTopImageView"
+                android:src="@drawable/yitu_face_black_shadow"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/yitu_face_faceShadeBottomImageView"
+                android:src="@drawable/yitu_face_black_shadow"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/yitu_face_faceSkeletonImageLayout" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/yitu_face_faceShadeLeftImageView"
+                android:src="@drawable/yitu_face_black_shadow"
+                android:layout_toLeftOf="@+id/yitu_face_faceSkeletonImageLayout"
+                android:layout_toStartOf="@+id/yitu_face_faceSkeletonImageLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/yitu_face_faceShadeTopImageView"
+                android:layout_above="@+id/yitu_face_faceShadeBottomImageView" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/yitu_face_faceShadeRightImageView"
+                android:src="@drawable/yitu_face_black_shadow"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/yitu_face_faceSkeletonImageLayout"
+                android:layout_toEndOf="@+id/yitu_face_faceSkeletonImageLayout"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/yitu_face_faceShadeTopImageView"
+                android:layout_above="@+id/yitu_face_faceShadeBottomImageView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/yitu_face_actionHintText"
+                android:visibility="visible"
+                android:textColor="#ffe9e9e9"
+                android:layout_marginTop="60dp"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/yitu_face_faceSkeletonImageLayout"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/yitu_face_hint_focus_here"
+                android:id="@+id/yitu_face_actionHintStaticTextView"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="#ffe9e9e9"
+                android:layout_alignTop="@+id/yitu_face_faceShadeBottomImageView"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt; 返回"
+            android:id="@+id/yitu_face_backButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:textColor="#ffe9e9e9"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yitu_face_idcardImagePreviewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false">
+
+        <View
+            android:id="@+id/yitu_face_idcardPreviewImageView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:scaleType="fitStart"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/yitu_face_idcardPreviewImageView"
+            android:id="@+id/yitu_face_progressBarLayout">
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:id="@+id/yitu_face_fileUploadProgressBar"
+                android:background="#cccccc"
+                android:max="100" />
+
+            <TextView
+                android:id="@+id/yitu_face_hintUploadingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="上传中，请稍候..."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/yitu_face_fileUploadProgressBar"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/yitu_face_idcardPreviewImageView"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/yitu_face_hintUploadResultRefused"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/yitu_face_hintUploadresultRefusedIcons">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/yitu_face_imageView3"
+                    android:src="@drawable/yitu_face_warning_symbol"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="对不起"
+                    android:id="@+id/yitu_face_textView3"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/yitu_face_imageView3"
+                    android:gravity="center_vertical"
+                    android:layout_centerHorizontal="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="您上传的照片不符合要求"
+                android:id="@+id/yitu_face_textView4"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/yitu_face_hintUploadresultRefusedIcons"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="请拍摄时保持光线温和\n且正对拍摄身份证整体"
+                android:id="@+id/yitu_face_textView5"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/yitu_face_textView4"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/yitu_face_reUploadButton1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="重新拍摄"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:background="@drawable/yitu_face_login_button_backgroud"
+                    android:layout_weight="1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:id="@+id/yitu_face_returnMainPage1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="返回主界面"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:background="@drawable/yitu_face_login_button_backgroud"
+                    android:layout_weight="1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/yitu_face_idcardPreviewImageView"
+            android:id="@+id/yitu_face_hintUploadResultOk"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/yitu_face_hintTextLinearLayout">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/yitu_face_imageView2"
+                    android:src="@drawable/yitu_face_correct_symbol"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="上传成功!"
+                    android:id="@+id/yitu_face_textView2"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/yitu_face_returnMainPageOK"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"
+                android:background="@drawable/yitu_face_login_button_backgroud"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:layout_below="@+id/yitu_face_hintTextLinearLayout" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/yitu_face_idcardPreviewImageView"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/yitu_face_hintUploadResultFail"
+            android:visibility="visible">
+
+            <!--<ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/yitu_face_imageView5"
+                android:src="@drawable/ic_image_grey600_48dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/yitu_face_hintUploadresultFailIcons">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/yitu_face_imageView4"
+                    android:src="@drawable/yitu_face_warning_symbol"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="对不起，上传失败"
+                    android:id="@+id/yitu_face_textView6"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/yitu_face_reUploadButton2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="重新拍摄"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:background="@drawable/yitu_face_login_button_backgroud"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/yitu_face_returnMainPage2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="返回主界面"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:background="@drawable/yitu_face_login_button_backgroud"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

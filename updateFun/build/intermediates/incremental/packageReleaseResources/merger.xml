@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="D:\Androidprojects\DaiQian\updateFun\src\main\res"/><source path="D:\Androidprojects\DaiQian\updateFun\build\generated\res\rs\release"/><source path="D:\Androidprojects\DaiQian\updateFun\build\generated\res\resValues\release"/></dataSet><dataSet config="release$Generated" generated="true"><source path="D:\Androidprojects\DaiQian\updateFun\src\release\res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="D:\Androidprojects\DaiQian\updateFun\src\main\res"><file name="dialog_style" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\drawable\dialog_style.xml" qualifiers="" type="drawable"/><file name="ic_launcher" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="bg_button_normal" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\drawable-mdpi\bg_button_normal.xml" qualifiers="mdpi-v4" type="drawable"/><file name="bg_button_pressed" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\drawable-mdpi\bg_button_pressed.xml" qualifiers="mdpi-v4" type="drawable"/><file name="bg_progress" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\drawable-mdpi\bg_progress.xml" qualifiers="mdpi-v4" type="drawable"/><file name="button" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\drawable-mdpi\button.xml" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="material_card" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\drawable-mdpi\material_card.xml" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\drawable-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="download_dialog" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\layout\download_dialog.xml" qualifiers="" type="layout"/><file name="download_notification_layout" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\layout\download_notification_layout.xml" qualifiers="" type="layout"/><file name="update_dialog" path="D:\Androidprojects\DaiQian\updateFun\src\main\res\layout\update_dialog.xml" qualifiers="" type="layout"/><file path="D:\Androidprojects\DaiQian\updateFun\src\main\res\values\color.xml" qualifiers=""><color name="colorPrimaryDark">#556BA7</color><color name="colorPrimary">#5474C9</color><color name="colorAccent">#F3456C</color></file><file path="D:\Androidprojects\DaiQian\updateFun\src\main\res\values\dimens.xml" qualifiers=""><dimen name="activity_vertical_margin">16dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen></file><file path="D:\Androidprojects\DaiQian\updateFun\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">UpdateFun</string></file><file path="D:\Androidprojects\DaiQian\updateFun\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
+        
+    </style><style name="MyDialogStyle" parent="AppTheme">
+       
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:alpha">1</item>
+        <item name="android:windowBackground">@drawable/dialog_style</item> 
+    </style><style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:minWidth">56dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textSize">14sp</item>
+    </style><style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style></file><file path="D:\Androidprojects\DaiQian\updateFun\src\main\res\values-sw720dp-land\dimens.xml" qualifiers="sw720dp-land-v13"><dimen name="activity_horizontal_margin">128dp</dimen></file><file path="D:\Androidprojects\DaiQian\updateFun\src\main\res\values-v11\styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        
+    </style></file><file path="D:\Androidprojects\DaiQian\updateFun\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        
+    </style></file></source><source path="D:\Androidprojects\DaiQian\updateFun\build\generated\res\rs\release"/><source path="D:\Androidprojects\DaiQian\updateFun\build\generated\res\resValues\release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="D:\Androidprojects\DaiQian\updateFun\src\release\res"/></dataSet><mergedItems/></merger>

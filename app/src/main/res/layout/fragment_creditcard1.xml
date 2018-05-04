@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+         <LinearLayout
+             android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="交易地区号" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_jydqh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="交易网点号" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_jywdh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="开户地区号" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_khdqh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="录入/复核地区号" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_lefhduh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="录入/复核网点号" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_lrfhwdh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="扫描/质检地区号" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_smzjdqh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="扫描/质检网点号" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_smzjwdh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/content_item_title"
+                    android:text="受理地区号" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_sldqh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="受理网点号" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_slwdh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/content_item_title"
+                    android:text="领卡地区号" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_lkdqh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="领卡网点号" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_lkwdh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="证件号码" />
+
+                <EditText
+                    android:maxLength="18"
+                    android:inputType="number"
+                    android:id="@+id/et_zjhm"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="证件有效期" />
+
+                <EditText
+                    android:maxLength="10"
+                    android:digits="1234567890-"
+                    android:id="@+id/et_zjyxq"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="姓名" />
+
+                <EditText
+                    android:id="@+id/et_xm"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="性别" />
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_xb"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/et_xb"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/btn_cardbin"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/btn_xb"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="出生日期" />
+
+                <TextView
+                    android:id="@+id/et_csrq"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="住宅地址市" />
+
+                <EditText
+                    android:id="@+id/et_zzdzs"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="住宅地址" />
+
+                <EditText
+                    android:id="@+id/et_zzdz"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="住宅电话号码" />
+
+                <EditText
+                    android:maxLength="11"
+                    android:inputType="phone|number"
+                    android:id="@+id/et_zzdhhm"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="手机号码" />
+
+                <EditText
+                    android:maxLength="11"
+                    android:inputType="phone|number"
+                    android:id="@+id/et_sjhm"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="单位电话号码" />
+
+                <EditText  android:maxLength="11"
+                    android:inputType="phone|number"
+
+                    android:id="@+id/et_dwdhhm"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="职务" />
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_zw"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/et_zw"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/btn_cardbin"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/btn_zw"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="单位地址市" />
+
+                <EditText
+                    android:id="@+id/et_dwdzs"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="工作单位地址" />
+
+                <EditText
+                    android:id="@+id/et_gzdwdz"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="单位邮编" />
+
+                <EditText
+                    android:maxLength="6"
+                    android:inputType="phone|number"
+                    android:id="@+id/et_dwyb"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="进入现单位工作时间" />
+
+                <TextView
+                    android:id="@+id/et_jrxdwgzsj"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="姓名拼音或英文名" />
+
+                <EditText
+                    android:digits="abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:id="@+id/et_xmpyhzwm"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="联系人一姓名" />
+
+                <EditText
+                    android:id="@+id/et_lxryxm"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="联系人一与主卡申请人关系" />
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_lxryyzkrgx"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/et_lxryyzkrgx"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/btn_cardbin"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/btn_lxryyzkrgx"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="联系人一手机" />
+
+                <EditText
+                    android:maxLength="11"
+                    android:inputType="phone|number"
+                    android:id="@+id/et_lxrysj"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="联系人一联系电话号" />
+
+                <EditText
+                    android:maxLength="11"
+                    android:inputType="phone|number"
+                    android:id="@+id/et_lxrylxdhh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="联系人二姓名" />
+
+                <EditText
+                    android:id="@+id/et_lxrexm"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="联系人二与主卡申请人关系" />
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_lxreyzksqrgx"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/et_lxreyzksqrgx"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/btn_cardbin"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/btn_lxreyzkrgx"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="联系人二手机" />
+
+                <EditText
+                    android:maxLength="11"
+                    android:inputType="phone|number"
+                    android:id="@+id/et_lxresj"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="联系人二联系电话号" />
+
+                <EditText
+                    android:maxLength="11"
+                    android:inputType="phone|number"
+                    android:id="@+id/et_lxrelxdhh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="营销档案编码" />
+
+                <EditText
+                    android:maxLength="8"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/et_yxdabm"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="申请品牌" />
+
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_sqpp"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/et_sqpp"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/btn_cardbin"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/btn_sqpp"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+
+                android:enabled="true"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    style="@style/content_item_title"
+                    android:text="申请卡类" />
+
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_sqkl"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/et_sqkl"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/btn_cardbin"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/btn_sqkl"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="授信类型" />
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_sxlx"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/et_sxlx"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/btn_cardbin"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/btn_sxlx"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:maxLength="7"
+                    android:inputType="numberDecimal"
+                    style="@style/content_item_title"
+                    android:text="申请卡BIN" />
+
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_sqkbin"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/et_sqkbin"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/btn_cardbin"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/btn_sqkbin"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:enabled="false"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="卡片介质" />
+
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_kpjz"
+                    style="@style/content_item_layout">
+
+                    <TextView
+                        android:id="@+id/et_kpjz"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/btn_cardbin"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/btn_kpjz"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:enabled="false"
+
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+
+                    style="@style/content_item_title"
+                    android:text="币种" />
+               <com.zonesun.daiqian.view.MyRelativeLayout
+                android:id="@+id/rl_bz"
+                style="@style/content_item_layout">
+
+                <TextView
+                    android:id="@+id/et_bz"
+                    style="@style/spinner_textview"
+                    android:layout_toLeftOf="@+id/btn_cardbin"></TextView>
+
+                <ImageButton
+                    android:id="@+id/btn_bz"
+                    style="@style/spinner_dropdown" />
+            </com.zonesun.daiqian.view.MyRelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:inputType="phone|number"
+                    android:maxLength="11"
+                    style="@style/content_item_title"
+                    android:text="短信提醒手机号码" />
+
+                <EditText
+
+                    android:id="@+id/et_dxtxsjh"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="营销代码" />
+
+                <EditText
+                    android:digits="abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:id="@+id/et_yxdm"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+   <Button
+       android:layout_gravity="center"
+       android:id="@+id/bt_tjiao"
+       android:text="提交"
+       android:layout_width="150dip"
+       android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
+
+
+        
+        
+        
+
+
+</ScrollView>

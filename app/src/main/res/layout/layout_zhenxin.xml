@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <!-- 申请人配偶征信状况   申请人征信状况 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:layout_height="wrap_content"
+                android:text="*申请人配偶征信状况" />
+
+            <com.zonesun.daiqian.view.MyRelativeLayout
+                android:id="@+id/rl_sqrpozx"
+                style="@style/content_item_layout" >
+
+                <TextView
+                    android:id="@+id/sqrpozxzk_spinner_text"
+                    style="@style/spinner_textview"
+                    android:layout_toLeftOf="@+id/sqrpozxzk_btn" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/sqrpozxzk_btn"
+                    style="@style/spinner_dropdown" />
+            </com.zonesun.daiqian.view.MyRelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="*申请人征信状况" />
+
+            <com.zonesun.daiqian.view.MyRelativeLayout
+                android:id="@+id/rl_sqrzx"
+                style="@style/content_item_layout" >
+
+                <TextView
+                    android:id="@+id/sqrzxzk_spinner_text"
+                    style="@style/spinner_textview" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/sqrzxzk_btn"
+                    style="@style/spinner_dropdown" />
+            </com.zonesun.daiqian.view.MyRelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 申请人学历    申请人家庭收入还贷比 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <!-- 申请人学历 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:layout_width="100dp"
+                android:text="申请人学历" />
+
+            <com.zonesun.daiqian.view.MyRelativeLayout
+                android:id="@+id/rl_sqrxl"
+                style="@style/content_item_layout" >
+
+                <TextView
+                    android:id="@+id/sqrxl_spinner_text"
+                    style="@style/spinner_textview"
+                    android:layout_toLeftOf="@+id/sqrxl_btn" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/sqrxl_btn"
+                    style="@style/spinner_dropdown" />
+            </com.zonesun.daiqian.view.MyRelativeLayout>
+        </LinearLayout>
+        <!-- 申请人家庭收入还贷比 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="申请人家庭收入还贷比" />
+
+            <TextView
+                android:id="@+id/sqrjtsrhdb_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:layout_width="100dp"
+                android:text="分期金额" />
+
+            <EditText
+                android:id="@+id/fenqiJE_edittext"
+                style="@style/content_item_edittext"
+                android:inputType="text"
+                android:textColor="#bfbfbf" />
+        </LinearLayout>
+        <!-- 成数	分期付款期数 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:layout_width="100dp"
+                android:text="成数" />
+
+            <TextView
+                android:id="@+id/cs_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!-- 分期付款期数 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="分期付款期数" />
+
+            <com.zonesun.daiqian.view.MyRelativeLayout
+                android:id="@+id/rl_fqfkqs"
+                style="@style/content_item_layout" >
+
+                <TextView
+                    android:id="@+id/fqfkqs_edittext"
+                    style="@style/spinner_textview"
+                    android:layout_toLeftOf="@+id/fqfkqs_btn" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/fqfkqs_btn"
+                    style="@style/spinner_dropdown" />
+            </com.zonesun.daiqian.view.MyRelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 首月还款金额	月还款金额       分期付款手续费率 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <!-- 首月还款金额 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="首月还款金额:" />
+
+            <TextView
+                android:id="@+id/syhkje_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!-- 月还款金额 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="月还款金额 :" />
+
+            <TextView
+                android:id="@+id/yhkje_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- 分期付款手续费率 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:text="分期付款手续费率:" />
+
+            <TextView
+                android:id="@+id/fqfksxfl_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:layout_width="100dp"
+                android:text="信用总额度" />
+
+            <TextView
+                android:id="@+id/xinyongkaZED_edittext"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/content_item_title"
+                android:layout_width="100dp"
+                android:text="手续费金额" />
+
+            <TextView
+                android:id="@+id/sxfje_textview"
+                style="@style/content_item_edittext"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_normal"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

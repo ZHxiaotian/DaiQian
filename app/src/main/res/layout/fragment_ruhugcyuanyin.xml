@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- ##################申请原因 ################################## -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/content_title"
+            android:text="申请原因" />
+        <!-- 购车品牌和原因 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal" >
+
+            <!-- 购车品牌 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    
+                   
+                    android:text="*购车品牌:" />
+
+                <RelativeLayout
+                    android:id="@+id/sqrxl_btn"
+                    android:layout_width="wrap_content"
+                     android:layout_height="40dip"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="20sp"
+                     >
+
+                    <EditText
+                        android:id="@+id/gcpp_spinner_text"
+                        style="@style/content_item_edittext_gcpp"
+                        android:layout_toLeftOf="@+id/rl_buyCarModel" >
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/rl_buyCarModel"
+                        style="@style/spinner_dropdown" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 购车原因 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="购车原因:" />
+
+                <EditText
+                    android:id="@+id/gcyy_edittext"
+                    style="@style/content_item_edittext" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 裸车价格和还款途径 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <!-- 裸车价格 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*裸车价格:" />
+
+                <EditText
+                    android:id="@+id/lcjg_edittext"
+                    style="@style/content_item_edittext"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+            <!-- 还款途径 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="还款途径:" />
+
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_huankuanzhengming"
+                    style="@style/content_item_layout" >
+
+                    <TextView
+                        android:id="@+id/hktj_spinner_text"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/hktj_btn"
+                        android:text="工资收入" >
+                    </TextView>
+
+                    <ImageButton
+                        android:id="@+id/hktj_btn"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 进口车标志、车型、排气量 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal" >
+
+            <!-- 进口车标志 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="进口车标志:" />
+
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_jkcenterport"
+                    style="@style/content_item_layout" >
+
+                    <TextView
+                        android:id="@+id/jkcbz_spinner_text"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/jkcbz_btn" >
+                    </TextView>
+
+                    <ImageButton
+                        android:id="@+id/jkcbz_btn"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+            </LinearLayout>
+
+            <!-- 车型 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="*车型:" />
+
+                <EditText
+                    android:id="@+id/cx_spinner_text"
+                    android:maxLength="10"
+                    style="@style/content_item_edittext" >
+                </EditText>
+            </LinearLayout>
+
+            <!-- 排气量 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/content_item_title"
+                    android:text="排气量:" />
+
+                <com.zonesun.daiqian.view.MyRelativeLayout
+                    android:id="@+id/rl_Displacement"
+                    style="@style/content_item_layout" >
+
+                    <TextView
+                        android:id="@+id/pql_spinner_text"
+                        style="@style/spinner_textview"
+                        android:layout_toLeftOf="@+id/pql_btn" >
+                    </TextView>
+
+                    <ImageButton
+                        android:id="@+id/pql_btn"
+                        style="@style/spinner_dropdown" />
+                </com.zonesun.daiqian.view.MyRelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

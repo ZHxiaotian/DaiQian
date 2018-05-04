@@ -1,0 +1,5 @@
+<resources>
+    <string name="title_activity_test_dbimage">TestActivity</string>
+    <string name="hello_world_dbimage">Hello world!</string>
+    <string name="action_settings_dbimage">Settings</string>
+</resources>
